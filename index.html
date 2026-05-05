@@ -308,10 +308,50 @@
             grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
         }
 
+        /* About section 2-col grid */
+        .about-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        /* Academics section 2-col grid */
+        .academics-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        /* FAQ grid */
+        .faq-grid {
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        }
+
         @media (max-width: 640px) {
             .benefits-grid,
             .why-grid {
                 grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .academics-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .faq-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            }
+
+            .about-img-wrap {
+                height: 300px;
+            }
+
+            /* Scale image heights proportionally: 300/480 ≈ 62.5% of desktop */
+            .about-img-main {
+                height: 238px !important;
+            }
+
+            .about-img-secondary {
+                height: 150px !important;
             }
         }
     </style>
@@ -506,13 +546,13 @@
 
     <!-- ═══ ABOUT ═══ -->
     <section class="py-24 px-[6%]" id="about">
-        <div class="grid gap-20 items-center" style="grid-template-columns:1fr 1fr">
+        <div class="about-grid grid gap-12 items-center">
             <!-- Image Stack -->
-            <div class="relative h-[480px]">
+            <div class="about-img-wrap relative h-[380px]">
                 <img class="about-img-main absolute top-0 left-0 object-cover rounded" style="width:75%;height:380px"
                     src="https://www.colbrownschool.com/_next/image?url=%2Fassets%2Flanding%2Fnineteen-thirties-2.webp&w=1200&q=75"
                     alt="Col Brown Cambridge School campus" />
-                <img class="absolute bottom-0 right-0 object-cover rounded"
+                <img class="about-img-secondary absolute bottom-0 right-0 object-cover rounded"
                     style="width:55%;height:240px;border:6px solid white;box-shadow:0 20px 60px rgba(0,0,0,0.12)"
                     src="https://www.colbrownschool.com/_next/image?url=%2Fassets%2Fboarding-life%2FCare5.jpg&w=3840&q=75"
                     alt="Boarding life at Col Brown" />
@@ -623,7 +663,8 @@
         <!-- VS Table -->
         <div class="mt-14 rounded-lg overflow-hidden"
             style="background:rgba(255,255,255,0.04);border:1px solid rgba(184,145,58,0.2)">
-            <table class="vs-table w-full border-collapse">
+            <div class="overflow-x-auto">
+            <table class="vs-table w-full border-collapse" style="min-width:540px">
                 <thead>
                     <tr>
                         <th class="text-left px-5 py-4 text-gold-light"
@@ -680,6 +721,7 @@
                     </tr>
                 </tbody>
             </table>
+            </div>
         </div>
     </section>
 
@@ -692,7 +734,7 @@
         <p class="text-text-muted font-light leading-relaxed max-w-[560px]" style="font-size:17px">We hold both
             ambitions simultaneously — and refuse to trade one for the other.</p>
 
-        <div class="grid gap-16 mt-14 items-start" style="grid-template-columns:1fr 1fr">
+        <div class="academics-grid grid gap-16 mt-14 items-start">
             <div>
                 <!-- Pillar 1 -->
                 <div class="mb-9">
@@ -991,7 +1033,7 @@
         <h2 class="font-playfair font-bold text-forest mb-4" style="font-size:clamp(30px,4vw,50px);line-height:1.15">
             Everything Parents Ask<br />Before Saying Yes</h2>
 
-        <div class="grid gap-4 mt-14" style="grid-template-columns:repeat(auto-fit,minmax(400px,1fr))">
+        <div class="faq-grid grid gap-4 mt-14">
             <div class="faq bg-white rounded-md overflow-hidden" style="box-shadow:0 2px 12px rgba(0,0,0,0.05)">
                 <div class="faq-q px-6 py-5 cursor-pointer flex items-center justify-between font-semibold text-forest select-none"
                     style="font-size:15px" onclick="toggleFaq(this)">
