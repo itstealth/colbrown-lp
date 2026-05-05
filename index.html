@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Col Brown Cambridge School – Best Boarding School in Dehradun | Admissions Open 2025–26</title>
+<meta name="description" content="Col Brown Cambridge School – Dehradun's premier ICSE boys boarding school since 1926. Enrol your son in an institution that builds leaders, not just students. Limited seats for 2025–26."/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          forest: '#1a3a2a',
+          'forest-mid': '#2c5940',
+          gold: '#b8913a',
+          'gold-light': '#d4a84b',
+          cream: '#f8f4ed',
+          'warm-white': '#fdfaf5',
+          charcoal: '#1e1e1e',
+          'text-muted': '#6b6b6b',
+        },
+        fontFamily: {
+          playfair: ['"Playfair Display"', 'serif'],
+          dm: ['"DM Sans"', 'sans-serif'],
+          cormorant: ['"Cormorant Garamond"', 'serif'],
+        },
+        animation: {
+          fadeUp: 'fadeUp 0.8s ease both',
+          pulse2: 'pulse2 1.5s infinite',
+        },
+        keyframes: {
+          fadeUp: {
+            from: { opacity: '0', transform: 'translateY(28px)' },
+            to: { opacity: '1', transform: 'translateY(0)' },
+          },
+          pulse2: {
+            '0%,100%': { opacity: '1', transform: 'scale(1)' },
+            '50%': { opacity: '0.5', transform: 'scale(1.4)' },
+          },
+        },
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; overflow-x: hidden; }
+  .font-playfair { font-family: 'Playfair Display', serif; }
+  .font-cormorant { font-family: 'Cormorant Garamond', serif; }
+
+  /* Animations */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(28px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes pulse2 {
+    0%,100%{ opacity:1; transform:scale(1); }
+    50%{ opacity:0.5; transform:scale(1.4); }
+  }
+  .anim-1 { animation: fadeUp 0.7s ease both; }
+  .anim-2 { animation: fadeUp 0.8s 0.1s ease both; }
+  .anim-3 { animation: fadeUp 0.8s 0.2s ease both; }
+  .anim-4 { animation: fadeUp 0.8s 0.3s ease both; }
+  .anim-5 { animation: fadeUp 0.8s 0.45s ease both; }
+  .anim-6 { animation: fadeUp 0.8s 0.6s ease both; }
+  .urgency-dot { animation: pulse2 1.5s infinite; }
+
+  /* Section label line */
+  .section-label::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 1px;
+    background: #b8913a;
+  }
+  .section-label-light::before { background: #d4a84b; }
+
+  /* Hero est line */
+  .hero-est::before {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 1px;
+    background: #b8913a;
+    flex-shrink: 0;
+  }
+
+  /* Benefit card hover */
+  .benefit-card { border-top: 3px solid transparent; transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s; }
+  .benefit-card:hover { border-top-color: #b8913a; transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0,0,0,0.12); z-index:1; }
+
+  /* Why card hover */
+  .why-card { transition: background 0.25s, border-color 0.25s; }
+  .why-card:hover { background: rgba(255,255,255,0.08); border-color: #b8913a; }
+
+  /* Boarding card hover */
+  .boarding-card { transition: transform 0.25s, box-shadow 0.25s; }
+  .boarding-card:hover { transform: translateY(-5px); box-shadow: 0 12px 40px rgba(0,0,0,0.12); }
+
+  /* FAQ arrow */
+  .faq-arrow { transition: transform 0.3s; }
+  .faq.open .faq-arrow { transform: rotate(45deg); }
+  .faq-answer { display: none; }
+  .faq.open .faq-answer { display: block; }
+
+  /* Testimonial quote */
+  .testimonial-card::before {
+    content: '"';
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    line-height: 0.7;
+    color: #b8913a;
+    opacity: 0.3;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+  }
+
+  /* About image shadow */
+  .about-img-main { box-shadow: 24px 24px 0 #b8913a; }
+
+  /* VS table */
+  .vs-table td:first-child { color: rgba(255,255,255,0.4); font-style: italic; }
+  .vs-table tr:hover td { background: rgba(255,255,255,0.02); }
+
+  /* Final CTA watermark */
+  .final-cta-bg::before {
+    content: 'CBS';
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+    font-family: 'Playfair Display', serif; font-size: 300px; font-weight: 900;
+    color: rgba(26,58,42,0.04); pointer-events: none; white-space: nowrap; line-height: 1;
+  }
+
+  /* Academics highlight quote mark */
+  .hl-quote-wrap::before {
+    content: '"';
+    position: absolute; top: -20px; left: 20px;
+    font-family: 'Playfair Display', serif; font-size: 180px;
+    color: rgba(184,145,58,0.12); line-height: 1;
+  }
+
+  /* Nav phone hidden on mobile */
+  @media(max-width:639px){ .nav-phone { display: none; } }
+  @media(min-width:640px){ .mobile-sticky { display: none !important; } }
+
+  /* Form submit hover */
+  .form-submit:hover { background: #d4a84b; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(184,145,58,0.4); }
+  .btn-primary:hover { background: #d4a84b; transform: translateY(-2px); box-shadow: 0 8px 32px rgba(184,145,58,0.5); }
+  .btn-secondary:hover { border-color: #d4a84b; color: #d4a84b; }
+  .btn-dark:hover { background: #0f2518; transform: translateY(-2px); }
+  .nav-cta:hover { background: #d4a84b; transform: translateY(-1px); }
+
+  /* Select appearance */
+  select { -webkit-appearance: none; appearance: none; }
+</style>
+</head>
+<body class="bg-warm-white text-charcoal">
+
+<!-- ═══ STICKY NAV ═══ -->
+<nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-[5%] py-3.5"
+     style="background:rgba(26,58,42,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(184,145,58,0.3)">
+  <div class="flex items-center gap-3">
+    <div class="w-11 h-11 rounded-full flex items-center justify-center text-white font-playfair font-black text-lg flex-shrink-0"
+         style="background:linear-gradient(135deg,#b8913a,#d4a84b);letter-spacing:-1px">CB</div>
+    <div class="text-white text-[13px] font-medium leading-snug" style="letter-spacing:0.5px">
+      Col Brown Cambridge School
+      <span class="block text-gold-light text-[11px] font-light">Est. 1926 · Dehradun</span>
+    </div>
+  </div>
+  <div class="flex items-center">
+    <span class="nav-phone text-white/70 text-[13px] mr-4">📞 +91 63951 14363</span>
+    <a href="#enquire" class="nav-cta bg-gold text-white no-underline px-5 py-2.5 rounded text-[13px] font-semibold uppercase transition-all"
+       style="letter-spacing:0.5px">Enquire Now →</a>
+  </div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section class="min-h-screen flex flex-col justify-center items-start px-[6%] pt-28 pb-20 relative overflow-hidden" id="top"
+  style="background:linear-gradient(160deg,rgba(14,32,20,0.88) 0%,rgba(26,58,42,0.75) 55%,rgba(0,0,0,0.5) 100%),url('https://www.colbrownschool.com/_next/image?url=%2Fassets%2Flanding%2Flanding-boarding.webp&w=3840&q=75') center/cover no-repeat">
+  <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(ellipse 80% 60% at 20% 60%,rgba(184,145,58,0.08) 0%,transparent 70%)"></div>
+
+  <div class="hero-est flex items-center gap-3 text-gold-light font-medium mb-5 anim-1"
+       style="font-size:11px;letter-spacing:4px;text-transform:uppercase">Est. 1926 &nbsp;·&nbsp; Dehradun, India &nbsp;·&nbsp; ICSE Affiliated</div>
+
+  <h1 class="font-playfair font-black text-white leading-none mb-6 max-w-[750px] anim-2"
+      style="font-size:clamp(38px,6vw,76px);line-height:1.08">
+    Where Boys Become<br/><em class="italic text-gold-light">Leaders for Life</em>
+  </h1>
+
+  <p class="text-white/80 font-light leading-relaxed max-w-[540px] mb-10 anim-3" style="font-size:clamp(16px,2vw,20px)">
+    India's most storied boarding school, tucked in the Himalayas.<br/>
+    <strong class="text-white font-semibold">Nearly a century</strong> of forging character, scholarship, and quiet confidence in young men — one term at a time.
+  </p>
+
+  <div class="flex gap-3.5 flex-wrap anim-4">
+    <a href="#enquire" class="btn-primary bg-gold text-white no-underline px-8 py-4 rounded text-[15px] font-semibold inline-flex items-center gap-2 transition-all"
+       style="box-shadow:0 4px 24px rgba(184,145,58,0.4)">🎓 Apply for 2025–26 Admission</a>
+    <a href="#about" class="btn-secondary text-white no-underline px-8 py-4 rounded text-[15px] font-medium inline-block transition-all"
+       style="border:1.5px solid rgba(255,255,255,0.5)">Take a Virtual Tour</a>
+  </div>
+
+  <div class="flex gap-8 flex-wrap mt-14 anim-5">
+    <div>
+      <div class="font-playfair text-gold-light font-bold leading-none" style="font-size:32px">99+</div>
+      <div class="text-white/60 uppercase mt-1" style="font-size:11px;letter-spacing:0.5px">Years of Legacy</div>
+    </div>
+    <div class="w-px h-12 self-center bg-white/20"></div>
+    <div>
+      <div class="font-playfair text-gold-light font-bold leading-none" style="font-size:32px">ICSE</div>
+      <div class="text-white/60 uppercase mt-1" style="font-size:11px;letter-spacing:0.5px">Affiliated Board</div>
+    </div>
+    <div class="w-px h-12 self-center bg-white/20"></div>
+    <div>
+      <div class="font-playfair text-gold-light font-bold leading-none" style="font-size:32px">Gr. 1–12</div>
+      <div class="text-white/60 uppercase mt-1" style="font-size:11px;letter-spacing:0.5px">Boys Boarding</div>
+    </div>
+    <div class="w-px h-12 self-center bg-white/20"></div>
+    <div>
+      <div class="font-playfair text-gold-light font-bold leading-none" style="font-size:32px">NDA · JEE · NEET</div>
+      <div class="text-white/60 uppercase mt-1" style="font-size:11px;letter-spacing:0.5px">On-Campus Coaching</div>
+    </div>
+  </div>
+
+  <div class="absolute bottom-7 right-[6%] text-white text-[13px] rounded-lg px-5 py-3.5 anim-6"
+       style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);backdrop-filter:blur(8px)">
+    <strong class="text-gold-light block text-[15px] mb-0.5">⚠ Limited Seats Remaining</strong>
+    Admissions for 2025–26 are filling fast. Secure your son's place today.
+  </div>
+</section>
+
+<!-- ═══ TRUST BAR ═══ -->
+<div class="bg-forest py-5 px-[6%] flex items-center justify-center gap-8 flex-wrap">
+  <div class="flex items-center gap-2.5 text-white/75 text-[13px]"><span class="text-gold text-lg">🏅</span> CISCE Affiliated (ICSE/ISC)</div>
+  <span class="text-white/20 text-lg">|</span>
+  <div class="flex items-center gap-2.5 text-white/75 text-[13px]"><span class="text-gold text-lg">🏔</span> 25-Acre Campus, Dehradun</div>
+  <span class="text-white/20 text-lg">|</span>
+  <div class="flex items-center gap-2.5 text-white/75 text-[13px]"><span class="text-gold text-lg">🎖</span> NDA Coaching On-Campus</div>
+  <span class="text-white/20 text-lg">|</span>
+  <div class="flex items-center gap-2.5 text-white/75 text-[13px]"><span class="text-gold text-lg">📞</span> Helpline: +91 63951 14363</div>
+  <span class="text-white/20 text-lg">|</span>
+  <div class="flex items-center gap-2.5 text-white/75 text-[13px]"><span class="text-gold text-lg">🔒</span> 24×7 Supervised Boarding</div>
+</div>
+
+<!-- ═══ BENEFITS ═══ -->
+<section class="bg-cream py-24 px-[6%]" id="benefits">
+  <div class="section-label flex items-center gap-2.5 text-gold font-semibold mb-3" style="font-size:11px;letter-spacing:4px;text-transform:uppercase">Why Parents Choose CBS</div>
+  <h2 class="font-playfair font-bold text-forest mb-4" style="font-size:clamp(30px,4vw,50px);line-height:1.15">Your Son Will Leave<br/>Transformed — Not Just Educated</h2>
+  <p class="text-text-muted font-light leading-relaxed max-w-[560px]" style="font-size:17px">We don't prepare boys for exams. We prepare them for everything that comes after.</p>
+
+  <div class="grid gap-0.5 mt-14" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
+    <!-- Card 1 -->
+    <div class="benefit-card bg-white p-10 relative">
+      <div class="w-[52px] h-[52px] rounded-full bg-forest flex items-center justify-center text-[22px] mb-5">🧭</div>
+      <h3 class="font-playfair font-bold text-forest text-[22px] mb-3">Discipline That Builds Character</h3>
+      <p class="text-text-muted leading-relaxed" style="font-size:15px">Our structured daily routine — from reveille to lights-out — instils self-regulation, punctuality and responsibility that stay with a boy for life.</p>
+      <div class="mt-4 py-3 px-4 bg-cream italic font-medium text-forest" style="font-size:13px;border-left:3px solid #b8913a">"My son made his bed every day before I asked him to." — CBS Parent</div>
+    </div>
+    <!-- Card 2 -->
+    <div class="benefit-card bg-white p-10 relative">
+      <div class="w-[52px] h-[52px] rounded-full bg-forest flex items-center justify-center text-[22px] mb-5">📚</div>
+      <h3 class="font-playfair font-bold text-forest text-[22px] mb-3">Academic Rigour Without Pressure</h3>
+      <p class="text-text-muted leading-relaxed" style="font-size:15px">Experienced ICSE faculty who teach the how and why — not just the what — producing genuinely curious thinkers, not rote-learners.</p>
+      <div class="mt-4 py-3 px-4 bg-cream italic font-medium text-forest" style="font-size:13px;border-left:3px solid #b8913a">On-campus NEET, JEE & NDA coaching included.</div>
+    </div>
+    <!-- Card 3 -->
+    <div class="benefit-card bg-white p-10 relative">
+      <div class="w-[52px] h-[52px] rounded-full bg-forest flex items-center justify-center text-[22px] mb-5">🏆</div>
+      <h3 class="font-playfair font-bold text-forest text-[22px] mb-3">Leadership Cultivated Daily</h3>
+      <p class="text-text-muted leading-relaxed" style="font-size:15px">Prefectorial system, house competitions, student councils — every boy gets a chance to lead, fail safely, and rise stronger.</p>
+      <div class="mt-4 py-3 px-4 bg-cream italic font-medium text-forest" style="font-size:13px;border-left:3px solid #b8913a">Alumni leading armed forces, business & public service.</div>
+    </div>
+    <!-- Card 4 -->
+    <div class="benefit-card bg-white p-10 relative">
+      <div class="w-[52px] h-[52px] rounded-full bg-forest flex items-center justify-center text-[22px] mb-5">⚽</div>
+      <h3 class="font-playfair font-bold text-forest text-[22px] mb-3">Sports as a Serious Pursuit</h3>
+      <p class="text-text-muted leading-relaxed" style="font-size:15px">Over 20 sports disciplines with certified coaches on a world-class Dehradun campus. Sport here shapes resilience, not just fitness.</p>
+      <div class="mt-4 py-3 px-4 bg-cream italic font-medium text-forest" style="font-size:13px;border-left:3px solid #b8913a">State & national level athletes produced every year.</div>
+    </div>
+    <!-- Card 5 -->
+    <div class="benefit-card bg-white p-10 relative">
+      <div class="w-[52px] h-[52px] rounded-full bg-forest flex items-center justify-center text-[22px] mb-5">🎭</div>
+      <h3 class="font-playfair font-bold text-forest text-[22px] mb-3">Arts, Music & Expression</h3>
+      <p class="text-text-muted leading-relaxed" style="font-size:15px">Dedicated studios for music, drama, debate and fine arts ensure your son discovers who he is beyond textbooks.</p>
+      <div class="mt-4 py-3 px-4 bg-cream italic font-medium text-forest" style="font-size:13px;border-left:3px solid #b8913a">Confident communicators from Day 1 of college.</div>
+    </div>
+    <!-- Card 6 -->
+    <div class="benefit-card bg-white p-10 relative">
+      <div class="w-[52px] h-[52px] rounded-full bg-forest flex items-center justify-center text-[22px] mb-5">🏠</div>
+      <h3 class="font-playfair font-bold text-forest text-[22px] mb-3">A Safe Second Home</h3>
+      <p class="text-text-muted leading-relaxed" style="font-size:15px">Expert housemasters, trained matrons, 24×7 medical support and a caring residential community that watches over every child.</p>
+      <div class="mt-4 py-3 px-4 bg-cream italic font-medium text-forest" style="font-size:13px;border-left:3px solid #b8913a">Parents report peace of mind from Day 1.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ABOUT ═══ -->
+<section class="py-24 px-[6%]" id="about">
+  <div class="grid gap-20 items-center" style="grid-template-columns:1fr 1fr">
+    <!-- Image Stack -->
+    <div class="relative h-[480px]">
+      <img class="about-img-main absolute top-0 left-0 object-cover rounded" style="width:75%;height:380px"
+           src="https://www.colbrownschool.com/_next/image?url=%2Fassets%2Flanding%2Fnineteen-thirties-2.webp&w=1200&q=75" alt="Col Brown Cambridge School campus"/>
+      <img class="absolute bottom-0 right-0 object-cover rounded" style="width:55%;height:240px;border:6px solid white;box-shadow:0 20px 60px rgba(0,0,0,0.12)"
+           src="https://www.colbrownschool.com/_next/image?url=%2Fassets%2Fboarding-life%2FCare5.jpg&w=3840&q=75" alt="Boarding life at Col Brown"/>
+      <div class="absolute top-7 right-0 bg-forest text-white text-center p-5 rounded z-10 w-[100px]">
+        <div class="font-playfair font-black text-gold-light" style="font-size:32px">99</div>
+        <div class="text-white/60" style="font-size:10px;letter-spacing:1px">Years of<br/>Excellence</div>
+      </div>
+    </div>
+    <!-- Content -->
+    <div>
+      <div class="section-label flex items-center gap-2.5 text-gold font-semibold mb-3" style="font-size:11px;letter-spacing:4px;text-transform:uppercase">About the School</div>
+      <h2 class="font-playfair font-bold text-forest mb-4" style="font-size:clamp(30px,4vw,50px);line-height:1.15">A Century of Shaping<br/>India's Finest Men</h2>
+      <p class="leading-relaxed text-[#444] mb-5" style="font-size:16px">Founded in March 1926 by Col. William Brown for Indian boys of every background, <strong>Colonel Brown Cambridge School</strong> stands today as one of India's most respected ICSE boarding schools — drawing students from across the subcontinent and beyond.</p>
+      <p class="leading-relaxed text-[#444] mb-5" style="font-size:16px">We believe a truly educated young man is more than his marks. He is honest, resilient, curious and compassionate. Every policy, programme and tradition at CBS is designed with that end in mind.</p>
+      <div class="grid grid-cols-3 gap-5 my-9 py-7" style="border-top:1px solid rgba(184,145,58,0.25);border-bottom:1px solid rgba(184,145,58,0.25)">
+        <div class="text-center"><div class="font-playfair font-bold text-forest" style="font-size:36px">1926</div><div class="text-text-muted mt-1" style="font-size:12px">Year Founded</div></div>
+        <div class="text-center"><div class="font-playfair font-bold text-forest" style="font-size:36px">25+</div><div class="text-text-muted mt-1" style="font-size:12px">Acre Campus</div></div>
+        <div class="text-center"><div class="font-playfair font-bold text-forest" style="font-size:36px">Gr 1–12</div><div class="text-text-muted mt-1" style="font-size:12px">All Levels</div></div>
+      </div>
+      <a href="#enquire" class="btn-primary bg-gold text-white no-underline px-8 py-4 rounded text-[15px] font-semibold inline-flex items-center gap-2 transition-all"
+         style="box-shadow:0 4px 24px rgba(184,145,58,0.4)">Book a Campus Tour →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ WHY CHOOSE US ═══ -->
+<section class="bg-forest py-24 px-[6%]" id="why">
+  <div class="section-label section-label-light flex items-center gap-2.5 text-gold-light font-semibold mb-3" style="font-size:11px;letter-spacing:4px;text-transform:uppercase">Our Differentiators</div>
+  <h2 class="font-playfair font-bold text-white mb-4" style="font-size:clamp(30px,4vw,50px);line-height:1.15">What Sets CBS Apart from Every Other Boarding School in Dehradun</h2>
+  <p class="text-white/65 font-light leading-relaxed max-w-[560px]" style="font-size:17px">There are many schools in the Valley. There is only one Colonel Brown.</p>
+
+  <div class="grid gap-6 mt-14" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+    <div class="why-card p-9 rounded-md" style="border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04)">
+      <div class="font-playfair font-black mb-3 leading-none" style="font-size:52px;color:rgba(184,145,58,0.2)">01</div>
+      <h3 class="font-playfair text-white text-xl mb-3">Nearly 100 Years of Trust</h3>
+      <p class="text-white/60 leading-relaxed" style="font-size:14px">No other boarding school in Dehradun can claim a century of unbroken educational tradition. Our legacy is your son's credential.</p>
+    </div>
+    <div class="why-card p-9 rounded-md" style="border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04)">
+      <div class="font-playfair font-black mb-3 leading-none" style="font-size:52px;color:rgba(184,145,58,0.2)">02</div>
+      <h3 class="font-playfair text-white text-xl mb-3">Integrated Career Coaching</h3>
+      <p class="text-white/60 leading-relaxed" style="font-size:14px">NEET, JEE and NDA coaching delivered on-campus by specialist faculty — no external institutes, no extra commute, no disruption to boarding life.</p>
+    </div>
+    <div class="why-card p-9 rounded-md" style="border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04)">
+      <div class="font-playfair font-black mb-3 leading-none" style="font-size:52px;color:rgba(184,145,58,0.2)">03</div>
+      <h3 class="font-playfair text-white text-xl mb-3">Small Batches, Individual Attention</h3>
+      <p class="text-white/60 leading-relaxed" style="font-size:14px">Deliberately limited class sizes ensure every teacher knows every student by name — and knows exactly where they need to grow.</p>
+    </div>
+    <div class="why-card p-9 rounded-md" style="border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04)">
+      <div class="font-playfair font-black mb-3 leading-none" style="font-size:52px;color:rgba(184,145,58,0.2)">04</div>
+      <h3 class="font-playfair text-white text-xl mb-3">Open to All — Not Just the Elite</h3>
+      <p class="text-white/60 leading-relaxed" style="font-size:14px">Col. Brown's founding principle was inclusivity. We welcome boys of every caste, creed and background, creating a microcosm of India's diversity.</p>
+    </div>
+    <div class="why-card p-9 rounded-md" style="border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04)">
+      <div class="font-playfair font-black mb-3 leading-none" style="font-size:52px;color:rgba(184,145,58,0.2)">05</div>
+      <h3 class="font-playfair text-white text-xl mb-3">Alumni Network Across Sectors</h3>
+      <p class="text-white/60 leading-relaxed" style="font-size:14px">From army generals to IAS officers to entrepreneurs — a CBS old boy never walks alone. Our alumni open doors that marks alone cannot.</p>
+    </div>
+    <div class="why-card p-9 rounded-md" style="border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04)">
+      <div class="font-playfair font-black mb-3 leading-none" style="font-size:52px;color:rgba(184,145,58,0.2)">06</div>
+      <h3 class="font-playfair text-white text-xl mb-3">Himalayan Setting — Focused Learning</h3>
+      <p class="text-white/60 leading-relaxed" style="font-size:14px">Our Dehradun campus is an environment designed for concentration, health and growth — away from city distraction, close to nature's discipline.</p>
+    </div>
+  </div>
+
+  <!-- VS Table -->
+  <div class="mt-14 rounded-lg overflow-hidden" style="background:rgba(255,255,255,0.04);border:1px solid rgba(184,145,58,0.2)">
+    <table class="vs-table w-full border-collapse">
+      <thead>
+        <tr>
+          <th class="text-left px-5 py-4 text-gold-light" style="background:rgba(184,145,58,0.15);font-size:12px;letter-spacing:2px;text-transform:uppercase">Feature</th>
+          <th class="text-left px-5 py-4 text-gold-light" style="background:rgba(184,145,58,0.15);font-size:12px;letter-spacing:2px;text-transform:uppercase">Col Brown Cambridge School</th>
+          <th class="text-left px-5 py-4 text-gold-light" style="background:rgba(184,145,58,0.15);font-size:12px;letter-spacing:2px;text-transform:uppercase">Typical Dehradun Boarding School</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="px-5 py-3.5 text-[14px] text-white/75" style="border-top:1px solid rgba(255,255,255,0.06)">Founded</td><td class="px-5 py-3.5 text-[14px] text-gold-light font-semibold" style="border-top:1px solid rgba(255,255,255,0.06)">1926 — 99 Years Old</td><td class="px-5 py-3.5 text-[14px] text-white/75" style="border-top:1px solid rgba(255,255,255,0.06)">Post-1980s</td></tr>
+        <tr><td class="px-5 py-3.5 text-[14px] text-white/75" style="border-top:1px solid rgba(255,255,255,0.06)">On-campus JEE/NEET/NDA</td><td class="px-5 py-3.5 text-[14px] text-gold-light font-semibold" style="border-top:1px solid rgba(255,255,255,0.06)">✓ Fully Integrated</td><td class="px-5 py-3.5 text-[14px] text-white/75" style="border-top:1px solid rgba(255,255,255,0.06)">Rarely / External</td></tr>
+        <tr><td class="px-5 py-3.5 text-[14px] text-white/75" style="border-top:1px solid rgba(255,255,255,0.06)">Board</td><td class="px-5 py-3.5 text-[14px] text-gold-light font-semibold" style="border-top:1px solid rgba(255,255,255,0.06)">ICSE / ISC (CISCE)</td><td class="px-5 py-3.5 text-[14px] text-white/75" style="border-top:1px solid rgba(255,255,255,0.06)">Varies</td></tr>
+        <tr><td class="px-5 py-3.5 text-[14px] text-white/75" style="border-top:1px solid rgba(255,255,255,0.06)">Admission inclusivity</td><td class="px-5 py-3.5 text-[14px] text-gold-light font-semibold" style="border-top:1px solid rgba(255,255,255,0.06)">All backgrounds welcome</td><td class="px-5 py-3.5 text-[14px] text-white/75" style="border-top:1px solid rgba(255,255,255,0.06)">Often selective by social class</td></tr>
+        <tr><td class="px-5 py-3.5 text-[14px] text-white/75" style="border-top:1px solid rgba(255,255,255,0.06)">Alumni network</td><td class="px-5 py-3.5 text-[14px] text-gold-light font-semibold" style="border-top:1px solid rgba(255,255,255,0.06)">Military, IAS, Corporate</td><td class="px-5 py-3.5 text-[14px] text-white/75" style="border-top:1px solid rgba(255,255,255,0.06)">Limited</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ═══ ACADEMICS ═══ -->
+<section class="py-24 px-[6%]" id="academics">
+  <div class="section-label flex items-center gap-2.5 text-gold font-semibold mb-3" style="font-size:11px;letter-spacing:4px;text-transform:uppercase">Academics & Beyond</div>
+  <h2 class="font-playfair font-bold text-forest mb-4" style="font-size:clamp(30px,4vw,50px);line-height:1.15">Brilliant Minds,<br/>Complete Human Beings</h2>
+  <p class="text-text-muted font-light leading-relaxed max-w-[560px]" style="font-size:17px">We hold both ambitions simultaneously — and refuse to trade one for the other.</p>
+
+  <div class="grid gap-16 mt-14 items-start" style="grid-template-columns:1fr 1fr">
+    <div>
+      <!-- Pillar 1 -->
+      <div class="mb-9">
+        <div class="flex items-center gap-3.5 mb-4 pb-4" style="border-bottom:1px solid rgba(184,145,58,0.25)">
+          <span class="text-2xl">📖</span>
+          <h3 class="font-playfair font-bold text-forest text-[22px]">Academic Programmes</h3>
+        </div>
+        <ul class="flex flex-col gap-2.5">
+          <li class="flex items-baseline gap-2.5 text-[#555]" style="font-size:15px"><span class="text-gold text-xs flex-shrink-0">—</span>ICSE (Class X) & ISC (Class XII) — CISCE Board</li>
+          <li class="flex items-baseline gap-2.5 text-[#555]" style="font-size:15px"><span class="text-gold text-xs flex-shrink-0">—</span>Science, Commerce & Humanities streams</li>
+          <li class="flex items-baseline gap-2.5 text-[#555]" style="font-size:15px"><span class="text-gold text-xs flex-shrink-0">—</span>On-campus JEE Main & Advanced coaching</li>
+          <li class="flex items-baseline gap-2.5 text-[#555]" style="font-size:15px"><span class="text-gold text-xs flex-shrink-0">—</span>On-campus NEET-UG preparation</li>
+          <li class="flex items-baseline gap-2.5 text-[#555]" style="font-size:15px"><span class="text-gold text-xs flex-shrink-0">—</span>On-campus NDA & Armed Forces entry coaching</li>
+          <li class="flex items-baseline gap-2.5 text-[#555]" style="font-size:15px"><span class="text-gold text-xs flex-shrink-0">—</span>Concept-led teaching — not rote memorisation</li>
+          <li class="flex items-baseline gap-2.5 text-[#555]" style="font-size:15px"><span class="text-gold text-xs flex-shrink-0">—</span>Regular diagnostic assessments & mentoring</li>
+        </ul>
+      </div>
+      <!-- Pillar 2 -->
+      <div class="mb-9">
+        <div class="flex items-center gap-3.5 mb-4 pb-4" style="border-bottom:1px solid rgba(184,145,58,0.25)">
+          <span class="text-2xl">🎨</span>
+          <h3 class="font-playfair font-bold text-forest text-[22px]">Co-Curricular Life</h3>
+        </div>
+        <ul class="flex flex-col gap-2.5">
+          <li class="flex items-baseline gap-2.5 text-[#555]" style="font-size:15px"><span class="text-gold text-xs flex-shrink-0">—</span>Music, drama, fine arts and literary clubs</li>
+          <li class="flex items-baseline gap-2.5 text-[#555]" style="font-size:15px"><span class="text-gold text-xs flex-shrink-0">—</span>Annual cultural festivals and inter-house competitions</li>
+          <li class="flex items-baseline gap-2.5 text-[#555]" style="font-size:15px"><span class="text-gold text-xs flex-shrink-0">—</span>Debate, MUN and public speaking</li>
+          <li class="flex items-baseline gap-2.5 text-[#555]" style="font-size:15px"><span class="text-gold text-xs flex-shrink-0">—</span>Environmental and community service programmes</li>
+          <li class="flex items-baseline gap-2.5 text-[#555]" style="font-size:15px"><span class="text-gold text-xs flex-shrink-0">—</span>Photography, filmmaking and digital arts</li>
+        </ul>
+      </div>
+      <!-- Pillar 3 -->
+      <div class="mb-9">
+        <div class="flex items-center gap-3.5 mb-4 pb-4" style="border-bottom:1px solid rgba(184,145,58,0.25)">
+          <span class="text-2xl">🏋️</span>
+          <h3 class="font-playfair font-bold text-forest text-[22px]">Sports & Athletics</h3>
+        </div>
+        <ul class="flex flex-col gap-2.5">
+          <li class="flex items-baseline gap-2.5 text-[#555]" style="font-size:15px"><span class="text-gold text-xs flex-shrink-0">—</span>Cricket, Football, Hockey, Basketball, Badminton</li>
+          <li class="flex items-baseline gap-2.5 text-[#555]" style="font-size:15px"><span class="text-gold text-xs flex-shrink-0">—</span>Swimming, Athletics and Cross-Country</li>
+          <li class="flex items-baseline gap-2.5 text-[#555]" style="font-size:15px"><span class="text-gold text-xs flex-shrink-0">—</span>Table Tennis, Chess, Squash</li>
+          <li class="flex items-baseline gap-2.5 text-[#555]" style="font-size:15px"><span class="text-gold text-xs flex-shrink-0">—</span>Adventure activities: trekking & outdoor pursuits</li>
+          <li class="flex items-baseline gap-2.5 text-[#555]" style="font-size:15px"><span class="text-gold text-xs flex-shrink-0">—</span>State-level competition pathways</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Highlight Box -->
+    <div class="hl-quote-wrap bg-forest text-white rounded-lg p-10 relative overflow-hidden">
+      <div class="font-cormorant text-[24px] italic leading-relaxed text-white/90 mb-6 relative z-10">"We teach boys the how and the why of every concept — not just the what. A CBS graduate doesn't just answer questions; he asks the right ones."</div>
+      <span class="inline-block bg-gold text-white text-xs font-semibold px-3.5 py-1.5 rounded" style="letter-spacing:0.5px">Our Academic Philosophy</span>
+      <div class="flex flex-col gap-3.5 mt-8">
+        <div class="flex justify-between items-center px-5 py-4 rounded" style="background:rgba(255,255,255,0.06);border-left:3px solid #b8913a">
+          <span class="text-white font-medium" style="font-size:15px">🔬 Science Stream</span>
+          <span class="text-gold-light text-xs px-2.5 py-1 rounded-full" style="background:rgba(184,145,58,0.15)">JEE · NEET</span>
+        </div>
+        <div class="flex justify-between items-center px-5 py-4 rounded" style="background:rgba(255,255,255,0.06);border-left:3px solid #b8913a">
+          <span class="text-white font-medium" style="font-size:15px">📊 Commerce Stream</span>
+          <span class="text-gold-light text-xs px-2.5 py-1 rounded-full" style="background:rgba(184,145,58,0.15)">CA · MBA Foundation</span>
+        </div>
+        <div class="flex justify-between items-center px-5 py-4 rounded" style="background:rgba(255,255,255,0.06);border-left:3px solid #b8913a">
+          <span class="text-white font-medium" style="font-size:15px">📜 Humanities Stream</span>
+          <span class="text-gold-light text-xs px-2.5 py-1 rounded-full" style="background:rgba(184,145,58,0.15)">IAS · Law · Journalism</span>
+        </div>
+        <div class="flex justify-between items-center px-5 py-4 rounded" style="background:rgba(255,255,255,0.06);border-left:3px solid #b8913a">
+          <span class="text-white font-medium" style="font-size:15px">🎖 NDA Pathway</span>
+          <span class="text-gold-light text-xs px-2.5 py-1 rounded-full" style="background:rgba(184,145,58,0.15)">Armed Forces Entry</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ BOARDING LIFE ═══ -->
+<section class="bg-cream py-24 px-[6%]" id="boarding">
+  <div class="section-label flex items-center gap-2.5 text-gold font-semibold mb-3" style="font-size:11px;letter-spacing:4px;text-transform:uppercase">Boarding & Residential Life</div>
+  <h2 class="font-playfair font-bold text-forest mb-4" style="font-size:clamp(30px,4vw,50px);line-height:1.15">Your Son Will Be Safe,<br/>Supervised — and Loved</h2>
+  <p class="text-text-muted font-light leading-relaxed max-w-[560px]" style="font-size:17px">The biggest decision is leaving him behind. We make sure he never feels that way.</p>
+
+  <div class="grid gap-6 mt-14" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">
+    <!-- Boarding Card 1 -->
+    <div class="boarding-card bg-white rounded-lg overflow-hidden" style="box-shadow:0 2px 20px rgba(0,0,0,0.06)">
+      <div class="bg-forest-mid px-6 py-7 flex items-center gap-3.5">
+        <span class="text-[28px]">🏠</span>
+        <h3 class="text-white font-playfair text-xl">Residential Houses</h3>
+      </div>
+      <div class="p-6">
+        <p class="text-text-muted leading-relaxed mb-4" style="font-size:14px">Comfortable, well-maintained dormitories with designated study hours, personal storage and a strong house identity.</p>
+        <ul class="flex flex-col gap-2">
+          <li class="text-forest flex gap-2 items-baseline" style="font-size:13px"><span class="text-gold font-bold flex-shrink-0">✓</span>Dedicated Housemasters per house</li>
+          <li class="text-forest flex gap-2 items-baseline" style="font-size:13px"><span class="text-gold font-bold flex-shrink-0">✓</span>Trained residential matrons</li>
+          <li class="text-forest flex gap-2 items-baseline" style="font-size:13px"><span class="text-gold font-bold flex-shrink-0">✓</span>Regular room & hygiene inspections</li>
+          <li class="text-forest flex gap-2 items-baseline" style="font-size:13px"><span class="text-gold font-bold flex-shrink-0">✓</span>Clean bedding, laundry services</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Boarding Card 2 -->
+    <div class="boarding-card bg-white rounded-lg overflow-hidden" style="box-shadow:0 2px 20px rgba(0,0,0,0.06)">
+      <div class="bg-forest-mid px-6 py-7 flex items-center gap-3.5">
+        <span class="text-[28px]">🩺</span>
+        <h3 class="text-white font-playfair text-xl">Health & Medical Care</h3>
+      </div>
+      <div class="p-6">
+        <p class="text-text-muted leading-relaxed mb-4" style="font-size:14px">A resident medical officer and infirmary on campus ensure your son receives prompt attention whenever needed.</p>
+        <ul class="flex flex-col gap-2">
+          <li class="text-forest flex gap-2 items-baseline" style="font-size:13px"><span class="text-gold font-bold flex-shrink-0">✓</span>24×7 infirmary access</li>
+          <li class="text-forest flex gap-2 items-baseline" style="font-size:13px"><span class="text-gold font-bold flex-shrink-0">✓</span>Resident medical officer</li>
+          <li class="text-forest flex gap-2 items-baseline" style="font-size:13px"><span class="text-gold font-bold flex-shrink-0">✓</span>Tie-up with Dehradun hospitals</li>
+          <li class="text-forest flex gap-2 items-baseline" style="font-size:13px"><span class="text-gold font-bold flex-shrink-0">✓</span>Parents notified immediately</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Boarding Card 3 -->
+    <div class="boarding-card bg-white rounded-lg overflow-hidden" style="box-shadow:0 2px 20px rgba(0,0,0,0.06)">
+      <div class="bg-forest-mid px-6 py-7 flex items-center gap-3.5">
+        <span class="text-[28px]">🍽️</span>
+        <h3 class="text-white font-playfair text-xl">Nutrition & Meals</h3>
+      </div>
+      <div class="p-6">
+        <p class="text-text-muted leading-relaxed mb-4" style="font-size:14px">Balanced, nutritious meals served in a supervised dining hall — designed for growing boys with active lives.</p>
+        <ul class="flex flex-col gap-2">
+          <li class="text-forest flex gap-2 items-baseline" style="font-size:13px"><span class="text-gold font-bold flex-shrink-0">✓</span>4 meals daily — breakfast to dinner</li>
+          <li class="text-forest flex gap-2 items-baseline" style="font-size:13px"><span class="text-gold font-bold flex-shrink-0">✓</span>Supervised dining hall</li>
+          <li class="text-forest flex gap-2 items-baseline" style="font-size:13px"><span class="text-gold font-bold flex-shrink-0">✓</span>Dietary needs accommodated</li>
+          <li class="text-forest flex gap-2 items-baseline" style="font-size:13px"><span class="text-gold font-bold flex-shrink-0">✓</span>Clean kitchen with hygiene audits</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Boarding Card 4 -->
+    <div class="boarding-card bg-white rounded-lg overflow-hidden" style="box-shadow:0 2px 20px rgba(0,0,0,0.06)">
+      <div class="bg-forest-mid px-6 py-7 flex items-center gap-3.5">
+        <span class="text-[28px]">🔒</span>
+        <h3 class="text-white font-playfair text-xl">Safety & Supervision</h3>
+      </div>
+      <div class="p-6">
+        <p class="text-text-muted leading-relaxed mb-4" style="font-size:14px">Our campus is a secure, monitored environment — so your son can focus on becoming, not just surviving.</p>
+        <ul class="flex flex-col gap-2">
+          <li class="text-forest flex gap-2 items-baseline" style="font-size:13px"><span class="text-gold font-bold flex-shrink-0">✓</span>24×7 campus security</li>
+          <li class="text-forest flex gap-2 items-baseline" style="font-size:13px"><span class="text-gold font-bold flex-shrink-0">✓</span>CCTV surveillance</li>
+          <li class="text-forest flex gap-2 items-baseline" style="font-size:13px"><span class="text-gold font-bold flex-shrink-0">✓</span>Structured daily schedule</li>
+          <li class="text-forest flex gap-2 items-baseline" style="font-size:13px"><span class="text-gold font-bold flex-shrink-0">✓</span>Disciplinary code & pastoral care</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Safety Banner -->
+  <div class="mt-12 bg-forest rounded-lg px-10 py-9 flex items-center justify-between gap-6 flex-wrap">
+    <div>
+      <h3 class="font-playfair text-white text-2xl mb-2">🔒 The Promise Every CBS Parent Receives</h3>
+      <p class="text-white/70 leading-relaxed max-w-[480px]" style="font-size:15px">Your son will be treated as our own. Experienced housemasters, caring matrons, and a resident doctor are on campus 24 hours a day, 365 days a year. You will always be the first to know.</p>
+    </div>
+    <a href="#enquire" class="btn-primary bg-gold text-white no-underline px-8 py-4 rounded text-[15px] font-semibold inline-flex items-center gap-2 transition-all whitespace-nowrap"
+       style="box-shadow:0 4px 24px rgba(184,145,58,0.4)">Talk to an Admissions Counsellor →</a>
+  </div>
+</section>
+
+<!-- ═══ TESTIMONIALS ═══ -->
+<section class="py-24 px-[6%]" id="testimonials">
+  <div class="section-label flex items-center gap-2.5 text-gold font-semibold mb-3" style="font-size:11px;letter-spacing:4px;text-transform:uppercase">Parent & Student Voices</div>
+  <h2 class="font-playfair font-bold text-forest mb-4" style="font-size:clamp(30px,4vw,50px);line-height:1.15">Heard From the People<br/>Who Matter Most</h2>
+
+  <div class="grid gap-7 mt-14" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+    <div class="testimonial-card bg-white p-9 rounded-lg relative" style="box-shadow:0 4px 24px rgba(0,0,0,0.06);border-bottom:4px solid #b8913a">
+      <div class="text-gold" style="font-size:13px">★★★★★</div>
+      <div class="font-cormorant text-lg italic leading-relaxed text-[#444] mb-7 mt-5">CBS is more than a school — it is a value system. My son arrived as a shy twelve-year-old. Four years later, he stood on stage as Head Prefect and delivered a speech that left the audience silent. Discipline and academics here are excellent, but it is the character that CBS builds which I will always be grateful for.</div>
+      <div class="flex items-center gap-3.5">
+        <div class="w-11 h-11 rounded-full bg-forest text-gold-light flex items-center justify-center font-playfair font-bold text-base">RT</div>
+        <div>
+          <div class="font-semibold text-forest" style="font-size:14px">Lt. Col. Ravi Tyagi (Retd.)</div>
+          <div class="text-text-muted" style="font-size:12px">Father of Yug Tyagi, Class VII</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card bg-white p-9 rounded-lg relative" style="box-shadow:0 4px 24px rgba(0,0,0,0.06);border-bottom:4px solid #b8913a">
+      <div class="text-gold" style="font-size:13px">★★★★★</div>
+      <div class="font-cormorant text-lg italic leading-relaxed text-[#444] mb-7 mt-5">I was worried sick the first time I dropped my son at the gates. Within two months, he was calling me excitedly about the inter-house cricket final — not homesick, but thriving. The housemasters and matrons are extraordinary. CBS gave my child a second family.</div>
+      <div class="flex items-center gap-3.5">
+        <div class="w-11 h-11 rounded-full bg-forest text-gold-light flex items-center justify-center font-playfair font-bold text-base">RK</div>
+        <div>
+          <div class="font-semibold text-forest" style="font-size:14px">Rishikesh Kumar Singh</div>
+          <div class="text-text-muted" style="font-size:12px">Father of Abhinav (Cl. X) & Vaibhav (Cl. VIII)</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card bg-white p-9 rounded-lg relative" style="box-shadow:0 4px 24px rgba(0,0,0,0.06);border-bottom:4px solid #b8913a">
+      <div class="text-gold" style="font-size:13px">★★★★★</div>
+      <div class="font-cormorant text-lg italic leading-relaxed text-[#444] mb-7 mt-5">At CBS, my son learned that excelling at academics and being a good human being are not competing goals — they are one and the same. The faculty sweats the details. The environment is warm but structured. Sending both my boys here is the best decision I have made as a parent.</div>
+      <div class="flex items-center gap-3.5">
+        <div class="w-11 h-11 rounded-full bg-forest text-gold-light flex items-center justify-center font-playfair font-bold text-base">MN</div>
+        <div>
+          <div class="font-semibold text-forest" style="font-size:14px">Parent of Manal Nautiyal</div>
+          <div class="text-text-muted" style="font-size:12px">Class IX, Boarding Student</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-12 bg-cream rounded-lg px-9 py-8 text-center">
+    <p class="font-cormorant text-[22px] italic text-forest max-w-[640px] mx-auto mb-5">"The nurturing environment, dedicated teachers, and well-established facilities at Col. Brown help students grow both academically and personally — a true home away from home."</p>
+    <p class="text-text-muted" style="font-size:13px">— Parent of Aayan (Cl. XI) & Sufyan (Cl. IX)</p>
+  </div>
+</section>
+
+<!-- ═══ LEAD FORM ═══ -->
+<div class="py-24 px-[6%] relative overflow-hidden" id="enquire"
+     style="background:linear-gradient(135deg,#1a3a2a 0%,#0d2118 100%)">
+  <div class="absolute pointer-events-none" style="top:-100px;right:-100px;width:500px;height:500px;background:radial-gradient(circle,rgba(184,145,58,0.12) 0%,transparent 70%)"></div>
+  <div class="grid gap-20 items-center" style="grid-template-columns:1fr 1fr">
+    <!-- Left -->
+    <div>
+      <div class="section-label section-label-light flex items-center gap-2.5 text-gold-light font-semibold mb-3" style="font-size:11px;letter-spacing:4px;text-transform:uppercase">Admissions 2025–26</div>
+      <h2 class="font-playfair font-bold text-white mb-5" style="font-size:clamp(28px,4vw,46px);line-height:1.2">Start Your Son's Journey to Becoming His Best Self</h2>
+      <p class="text-white/65 leading-relaxed mb-8" style="font-size:16px">Seats are filling for the upcoming academic session. Fill in this quick form and our Admissions Counsellor will reach out to you within 24 hours — no pressure, just answers.</p>
+      <div class="flex flex-col gap-3.5">
+        <div class="flex items-center gap-3 text-white/80 text-sm"><span class="text-gold-light text-lg">✓</span>Response within 24 hours</div>
+        <div class="flex items-center gap-3 text-white/80 text-sm"><span class="text-gold-light text-lg">✓</span>Free campus tour (in-person or virtual)</div>
+        <div class="flex items-center gap-3 text-white/80 text-sm"><span class="text-gold-light text-lg">✓</span>Fee structure shared privately</div>
+        <div class="flex items-center gap-3 text-white/80 text-sm"><span class="text-gold-light text-lg">✓</span>Speak directly to the Admissions Head</div>
+        <div class="flex items-center gap-3 text-white/80 text-sm"><span class="text-gold-light text-lg">✓</span>No spam. Your details are safe with us.</div>
+      </div>
+    </div>
+    <!-- Right -->
+    <div>
+      <div class="bg-white rounded-xl px-9 py-10" style="box-shadow:0 24px 80px rgba(0,0,0,0.3)">
+        <h3 class="font-playfair text-forest text-2xl mb-1.5">Request Admission Information</h3>
+        <p class="text-text-muted mb-7" style="font-size:13px">Takes under 60 seconds · No commitment required</p>
+        <div class="grid grid-cols-2 gap-3.5 mb-4">
+          <div>
+            <label class="block text-forest font-semibold uppercase mb-1.5" style="font-size:12px;letter-spacing:0.5px">Parent's Name *</label>
+            <input type="text" placeholder="Your full name" class="w-full px-4 py-3 rounded-md text-charcoal outline-none bg-white transition-colors" style="border:1.5px solid #e0e0e0;font-size:15px" onfocus="this.style.borderColor='#1a3a2a'" onblur="this.style.borderColor='#e0e0e0'"/>
+          </div>
+          <div>
+            <label class="block text-forest font-semibold uppercase mb-1.5" style="font-size:12px;letter-spacing:0.5px">Mobile Number *</label>
+            <input type="tel" placeholder="+91 XXXXX XXXXX" class="w-full px-4 py-3 rounded-md text-charcoal outline-none bg-white transition-colors" style="border:1.5px solid #e0e0e0;font-size:15px" onfocus="this.style.borderColor='#1a3a2a'" onblur="this.style.borderColor='#e0e0e0'"/>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="block text-forest font-semibold uppercase mb-1.5" style="font-size:12px;letter-spacing:0.5px">City *</label>
+          <input type="text" placeholder="Your city (e.g. Delhi, Mumbai, Lucknow)" class="w-full px-4 py-3 rounded-md text-charcoal outline-none bg-white transition-colors" style="border:1.5px solid #e0e0e0;font-size:15px" onfocus="this.style.borderColor='#1a3a2a'" onblur="this.style.borderColor='#e0e0e0'"/>
+        </div>
+        <div class="grid grid-cols-2 gap-3.5 mb-2">
+          <div>
+            <label class="block text-forest font-semibold uppercase mb-1.5" style="font-size:12px;letter-spacing:0.5px">Son's Current Class</label>
+            <select class="w-full px-4 py-3 rounded-md text-charcoal outline-none bg-white transition-colors" style="border:1.5px solid #e0e0e0;font-size:15px">
+              <option value="">Select Class</option>
+              <option>Class 1 – 3</option>
+              <option>Class 4 – 6</option>
+              <option>Class 7 – 9</option>
+              <option>Class 10 – 11</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-forest font-semibold uppercase mb-1.5" style="font-size:12px;letter-spacing:0.5px">Preferred Session</label>
+            <select class="w-full px-4 py-3 rounded-md text-charcoal outline-none bg-white transition-colors" style="border:1.5px solid #e0e0e0;font-size:15px">
+              <option>2025 – 26</option>
+              <option>2026 – 27</option>
+            </select>
+          </div>
+        </div>
+        <button class="form-submit w-full py-4 bg-gold text-white rounded-md font-bold text-base mt-2 transition-all flex items-center justify-center gap-2"
+                onclick="alert('Thank you! An Admissions Counsellor will contact you within 24 hours.')">
+          🎓 Send My Enquiry — It's Free
+        </button>
+        <p class="text-center mt-3.5 text-text-muted" style="font-size:12px">By submitting, you agree to be contacted by CBS Admissions. <a href="#" class="text-forest underline">Privacy Policy</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ FAQs ═══ -->
+<section class="bg-cream py-24 px-[6%]" id="faqs">
+  <div class="section-label flex items-center gap-2.5 text-gold font-semibold mb-3" style="font-size:11px;letter-spacing:4px;text-transform:uppercase">Common Questions</div>
+  <h2 class="font-playfair font-bold text-forest mb-4" style="font-size:clamp(30px,4vw,50px);line-height:1.15">Everything Parents Ask<br/>Before Saying Yes</h2>
+
+  <div class="grid gap-4 mt-14" style="grid-template-columns:repeat(auto-fit,minmax(400px,1fr))">
+    <div class="faq bg-white rounded-md overflow-hidden" style="box-shadow:0 2px 12px rgba(0,0,0,0.05)">
+      <div class="faq-q px-6 py-5 cursor-pointer flex items-center justify-between font-semibold text-forest select-none" style="font-size:15px" onclick="toggleFaq(this)">
+        What is the fee structure for boarding? <span class="faq-arrow text-gold text-xl">+</span>
+      </div>
+      <div class="faq-answer px-6 pb-5 text-text-muted leading-relaxed" style="font-size:14px">The annual boarding and tuition fee is structured to cover all essential residential services — accommodation, meals, laundry, medical support and co-curricular activities. To receive the current detailed fee schedule, please submit your enquiry above or call +91 63951 14363. Our Admissions team will share the fee structure privately with no obligation.</div>
+    </div>
+    <div class="faq bg-white rounded-md overflow-hidden" style="box-shadow:0 2px 12px rgba(0,0,0,0.05)">
+      <div class="faq-q px-6 py-5 cursor-pointer flex items-center justify-between font-semibold text-forest select-none" style="font-size:15px" onclick="toggleFaq(this)">
+        How does the school ensure my son's safety on campus? <span class="faq-arrow text-gold text-xl">+</span>
+      </div>
+      <div class="faq-answer px-6 pb-5 text-text-muted leading-relaxed" style="font-size:14px">CBS operates a 24×7 supervised residential campus. Each house has a dedicated Housemaster and a trained Matron who live on-campus. A resident Medical Officer runs the school infirmary. The campus has security personnel and CCTV coverage. Parents are notified immediately in any situation, and regular parent-teacher communication is a structural part of boarding life.</div>
+    </div>
+    <div class="faq bg-white rounded-md overflow-hidden" style="box-shadow:0 2px 12px rgba(0,0,0,0.05)">
+      <div class="faq-q px-6 py-5 cursor-pointer flex items-center justify-between font-semibold text-forest select-none" style="font-size:15px" onclick="toggleFaq(this)">
+        Which board does Col Brown Cambridge School follow? <span class="faq-arrow text-gold text-xl">+</span>
+      </div>
+      <div class="faq-answer px-6 pb-5 text-text-muted leading-relaxed" style="font-size:14px">CBS is affiliated to the Council for the Indian School Certificate Examinations (CISCE). Students appear for ICSE (Class X) and ISC (Class XII) examinations — widely recognised as one of India's most rigorous and respected school-level boards, accepted by universities globally.</div>
+    </div>
+    <div class="faq bg-white rounded-md overflow-hidden" style="box-shadow:0 2px 12px rgba(0,0,0,0.05)">
+      <div class="faq-q px-6 py-5 cursor-pointer flex items-center justify-between font-semibold text-forest select-none" style="font-size:15px" onclick="toggleFaq(this)">
+        What does a typical day in boarding look like? <span class="faq-arrow text-gold text-xl">+</span>
+      </div>
+      <div class="faq-answer px-6 pb-5 text-text-muted leading-relaxed" style="font-size:14px">A CBS day begins with morning PT and assembly, moves through academic classes, activity periods, sports, supervised prep (study hall) in the evening, and ends with house time before lights-out. The structured routine is intentional — routine creates discipline, and discipline creates freedom. Boys know exactly what to expect, and thrive within that structure.</div>
+    </div>
+    <div class="faq bg-white rounded-md overflow-hidden" style="box-shadow:0 2px 12px rgba(0,0,0,0.05)">
+      <div class="faq-q px-6 py-5 cursor-pointer flex items-center justify-between font-semibold text-forest select-none" style="font-size:15px" onclick="toggleFaq(this)">
+        Does the school offer coaching for competitive exams like JEE, NEET, or NDA? <span class="faq-arrow text-gold text-xl">+</span>
+      </div>
+      <div class="faq-answer px-6 pb-5 text-text-muted leading-relaxed" style="font-size:14px">Yes — CBS is one of the few boarding schools in Dehradun to offer fully integrated, on-campus coaching for JEE Main & Advanced, NEET-UG, and NDA entrance examinations. These sessions are conducted by specialist faculty without disrupting the regular academic timetable or boarding routine.</div>
+    </div>
+    <div class="faq bg-white rounded-md overflow-hidden" style="box-shadow:0 2px 12px rgba(0,0,0,0.05)">
+      <div class="faq-q px-6 py-5 cursor-pointer flex items-center justify-between font-semibold text-forest select-none" style="font-size:15px" onclick="toggleFaq(this)">
+        Can we visit the campus before applying? <span class="faq-arrow text-gold text-xl">+</span>
+      </div>
+      <div class="faq-answer px-6 pb-5 text-text-muted leading-relaxed" style="font-size:14px">Absolutely. We strongly encourage campus visits — nothing conveys the CBS experience like walking through our grounds, meeting the housemasters, and speaking with our Admissions team in person. You can also request a virtual tour if you're travelling from outside Dehradun. Submit your enquiry above and we'll schedule your visit at a time that suits you.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FINAL CTA ═══ -->
+<section class="final-cta-bg bg-cream text-center py-24 px-[6%] relative overflow-hidden">
+  <h2 class="font-playfair font-bold text-forest mb-5 relative" style="font-size:clamp(32px,5vw,56px)">The Right School Changes Everything.<br/>This Is That School.</h2>
+  <p class="text-text-muted max-w-[520px] mx-auto mb-10 leading-relaxed relative" style="font-size:17px">Applications for the 2025–26 academic session are open. Seats at CBS have always filled before the deadline — because parents who visit don't leave without enrolling.</p>
+  <div class="flex gap-4 justify-center flex-wrap relative">
+    <a href="#enquire" class="btn-primary bg-gold text-white no-underline px-8 py-4 rounded text-[15px] font-semibold inline-flex items-center gap-2 transition-all"
+       style="box-shadow:0 4px 24px rgba(184,145,58,0.4)">🎓 Apply Now — Seats Filling Fast</a>
+    <a href="tel:+916395114363" class="btn-dark bg-forest text-white no-underline px-8 py-4 rounded text-[15px] font-semibold inline-flex items-center gap-2 transition-all">📞 Call Admissions: +91 63951 14363</a>
+  </div>
+  <div class="mt-9 relative">
+    <span class="inline-flex items-center gap-2.5 text-forest font-medium px-5 py-2.5 rounded-full" style="font-size:13px;background:rgba(184,145,58,0.12);border:1px solid rgba(184,145,58,0.25)">
+      <span class="urgency-dot w-2 h-2 rounded-full bg-[#e05c35]"></span>
+      Admissions Closing Soon for 2025–26 · Secure Your Son's Seat Today
+    </span>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="py-12 px-[6%] pb-7" style="background:#0d1f15;color:rgba(255,255,255,0.6);display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px">
+  <div>
+    <div class="font-playfair text-[18px] font-bold" style="color:#d4a84b">Col Brown Cambridge School</div>
+    <p class="mt-3 leading-relaxed" style="font-size:13px">5 Kasturba Road, Dalanwala<br/>Dehradun – 248 001, Uttarakhand, India<br/>Est. 1926 · ICSE/ISC Affiliated</p>
+    <p class="mt-4" style="font-size:13px;line-height:1.8">
+      📞 <a href="tel:+916395114363" class="hover:text-gold-light transition-colors" style="color:rgba(255,255,255,0.5)">+91 63951 14363</a><br/>
+      📞 <a href="tel:+919286105336" class="hover:text-gold-light transition-colors" style="color:rgba(255,255,255,0.5)">+91 92861 05336</a><br/>
+      ✉️ <a href="mailto:principal@colbrownschool.com" class="hover:text-gold-light transition-colors" style="color:rgba(255,255,255,0.5)">principal@colbrownschool.com</a>
+    </p>
+  </div>
+  <div>
+    <h4 class="text-white font-semibold mb-4" style="font-size:14px;letter-spacing:0.5px">Quick Links</h4>
+    <ul class="flex flex-col" style="font-size:13px;line-height:1.8">
+      <li><a href="https://www.colbrownschool.com/about/legacy-of-cbs" class="hover:text-gold-light transition-colors" style="color:rgba(255,255,255,0.5)">About CBS</a></li>
+      <li><a href="https://www.colbrownschool.com/admission/admission-procedure" class="hover:text-gold-light transition-colors" style="color:rgba(255,255,255,0.5)">Admissions</a></li>
+      <li><a href="https://www.colbrownschool.com/admission/fee-details" class="hover:text-gold-light transition-colors" style="color:rgba(255,255,255,0.5)">Fee Structure</a></li>
+      <li><a href="https://www.colbrownschool.com/boarding-life/overview" class="hover:text-gold-light transition-colors" style="color:rgba(255,255,255,0.5)">Boarding Life</a></li>
+      <li><a href="https://www.colbrownschool.com/beyond-classroom/clubs-at-cbs" class="hover:text-gold-light transition-colors" style="color:rgba(255,255,255,0.5)">Activities</a></li>
+      <li><a href="https://www.colbrownschool.com/notable-alumni" class="hover:text-gold-light transition-colors" style="color:rgba(255,255,255,0.5)">Alumni</a></li>
+    </ul>
+  </div>
+  <div>
+    <h4 class="text-white font-semibold mb-4" style="font-size:14px;letter-spacing:0.5px">Follow CBS</h4>
+    <ul class="flex flex-col" style="font-size:13px;line-height:1.8">
+      <li><a href="https://www.instagram.com/colbrownschooldehradun/" class="hover:text-gold-light transition-colors" style="color:rgba(255,255,255,0.5)">Instagram</a></li>
+      <li><a href="https://www.colbrownschool.com/media-gallery" class="hover:text-gold-light transition-colors" style="color:rgba(255,255,255,0.5)">Photo Gallery</a></li>
+      <li><a href="https://www.colbrownschool.com/beyond-classroom/news-and-events" class="hover:text-gold-light transition-colors" style="color:rgba(255,255,255,0.5)">News & Events</a></li>
+      <li><a href="https://www.colbrownschool.com/newsletter" class="hover:text-gold-light transition-colors" style="color:rgba(255,255,255,0.5)">Newsletter</a></li>
+    </ul>
+    <div class="mt-6">
+      <a href="#enquire" class="nav-cta bg-gold text-white no-underline inline-block px-5 py-2.5 rounded text-[13px] font-semibold uppercase transition-all" style="letter-spacing:0.5px">Enquire Now →</a>
+    </div>
+  </div>
+  <div class="col-span-3 flex justify-between items-center flex-wrap gap-2 pt-5 mt-5" style="border-top:1px solid rgba(255,255,255,0.1);font-size:12px">
+    <span>© 2025 Col. Brown Cambridge School, Dehradun. All Rights Reserved.</span>
+    <span style="color:rgba(255,255,255,0.3)">Best Boarding School in Dehradun for Boys · ICSE Residential School India</span>
+  </div>
+</footer>
+
+<!-- ═══ MOBILE STICKY CTA ═══ -->
+<div class="mobile-sticky fixed bottom-0 left-0 right-0 z-50 bg-forest px-5 py-3.5 items-center justify-between gap-3 flex sm:hidden" style="border-top:2px solid #b8913a;box-shadow:0 -4px 24px rgba(0,0,0,0.2)">
+  <div class="text-white" style="font-size:13px">
+    <strong class="block text-gold-light" style="font-size:15px">Admissions Open 2025–26</strong>
+    Seats filling fast — enquire today
+  </div>
+  <a href="#enquire" class="nav-cta bg-gold text-white no-underline px-5 py-2.5 rounded text-[13px] font-semibold uppercase transition-all" style="letter-spacing:0.5px">Apply Now</a>
+</div>
+
+<script>
+function toggleFaq(el) {
+  const card = el.closest('.faq');
+  card.classList.toggle('open');
+}
+</script>
+</body>
+</html>
