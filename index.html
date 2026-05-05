@@ -264,145 +264,165 @@
             }
         }
 
-        /* Hero stats – 2×2 grid on mobile */
-        .hero-stats {
-            display: flex;
-            gap: 2rem;
-            flex-wrap: wrap;
+        /* Form error states */
+        .form-group.has-error input,
+        .form-group.has-error select,
+        .form-group.has-error textarea {
+            box-shadow: inset 0 0 0 2px #ef4444 !important;
+        }
+        .form-group.has-error .error-msg {
+            opacity: 1;
         }
 
-        @media(max-width:639px) {
-            .hero-stats {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                gap: 0.25rem 0.5rem;
+            /* Hide scrollbar for horizontal scrolling elements */
+            .hide-scrollbar {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
             }
 
-            .hero-stats-sep {
+            .hide-scrollbar::-webkit-scrollbar {
                 display: none;
             }
 
-            /* Scale down stat numbers & labels to fit one row */
-            .hero-stats>div>div:first-child {
-                font-size: 18px !important;
-                line-height: 1.1;
+            /* Hero stats – 2×2 grid on mobile */
+            .hero-stats {
+                display: flex;
+                gap: 2rem;
+                flex-wrap: wrap;
             }
 
-            .hero-stats>div>div:last-child {
-                font-size: 8px !important;
+            @media(max-width:639px) {
+                .hero-stats {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 0.25rem 0.5rem;
+                }
+
+                .hero-stats-sep {
+                    display: none;
+                }
+
+                /* Scale down stat numbers & labels to fit one row */
+                .hero-stats>div>div:first-child {
+                    font-size: 18px !important;
+                    line-height: 1.1;
+                }
+
+                .hero-stats>div>div:last-child {
+                    font-size: 8px !important;
+                }
             }
-        }
 
-        /* Form submit hover */
-        .form-submit:hover {
-            background: #d4a84b;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(184, 145, 58, 0.4);
-        }
+            /* Form submit hover */
+            .form-submit:hover {
+                background: #d4a84b;
+                transform: translateY(-2px);
+                box-shadow: 0 6px 20px rgba(184, 145, 58, 0.4);
+            }
 
-        .btn-primary:hover {
-            background: #d4a84b;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 32px rgba(184, 145, 58, 0.5);
-        }
+            .btn-primary:hover {
+                background: #d4a84b;
+                transform: translateY(-2px);
+                box-shadow: 0 8px 32px rgba(184, 145, 58, 0.5);
+            }
 
-        .btn-secondary:hover {
-            border-color: #d4a84b;
-            color: #d4a84b;
-        }
+            .btn-secondary:hover {
+                border-color: #d4a84b;
+                color: #d4a84b;
+            }
 
-        .btn-dark:hover {
-            background: #0f2518;
-            transform: translateY(-2px);
-        }
+            .btn-dark:hover {
+                background: #0f2518;
+                transform: translateY(-2px);
+            }
 
-        .nav-cta:hover {
-            background: #d4a84b;
-            transform: translateY(-1px);
-        }
+            .nav-cta:hover {
+                background: #d4a84b;
+                transform: translateY(-1px);
+            }
 
-        /* Select appearance */
-        select {
-            -webkit-appearance: none;
-            appearance: none;
-        }
+            /* Select appearance */
+            select {
+                -webkit-appearance: none;
+                appearance: none;
+            }
 
-        /* Benefits grid – responsive column sizing */
-        .benefits-grid {
-            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-        }
+            /* Benefits grid – responsive column sizing */
+            .benefits-grid {
+                grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            }
 
-        /* Why-choose grid – responsive column sizing */
-        .why-grid {
-            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-        }
-
-        /* About section 2-col grid */
-        .about-grid {
-            grid-template-columns: 1fr 1fr;
-        }
-
-        /* Academics section 2-col grid */
-        .academics-grid {
-            grid-template-columns: 1fr 1fr;
-        }
-
-        /* FAQ grid */
-        .faq-grid {
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        }
-
-        /* About stats grid */
-        .about-stats {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.25rem;
-        }
-
-        @media (max-width: 640px) {
-
-            .benefits-grid,
+            /* Why-choose grid – responsive column sizing */
             .why-grid {
-                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
             }
 
+            /* About section 2-col grid */
             .about-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr 1fr;
             }
 
+            /* Academics section 2-col grid */
             .academics-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr 1fr;
             }
 
+            /* FAQ grid */
             .faq-grid {
-                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             }
 
+            /* About stats grid */
             .about-stats {
-                gap: 0.5rem;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.25rem;
             }
 
-            .about-stats>div>div:first-child {
-                font-size: 20px !important;
-            }
+            @media (max-width: 640px) {
 
-            .about-stats>div>div:last-child {
-                font-size: 10px !important;
-            }
+                .benefits-grid,
+                .why-grid {
+                    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                }
 
-            .about-img-wrap {
-                height: 300px;
-            }
+                .about-grid {
+                    grid-template-columns: 1fr;
+                }
 
-            /* Scale image heights proportionally: 300/480 ≈ 62.5% of desktop */
-            .about-img-main {
-                height: 238px !important;
-            }
+                .academics-grid {
+                    grid-template-columns: 1fr;
+                }
 
-            .about-img-secondary {
-                height: 150px !important;
+                .faq-grid {
+                    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                }
+
+                .about-stats {
+                    gap: 0.5rem;
+                }
+
+                .about-stats>div>div:first-child {
+                    font-size: 20px !important;
+                }
+
+                .about-stats>div>div:last-child {
+                    font-size: 10px !important;
+                }
+
+                .about-img-wrap {
+                    height: 300px;
+                }
+
+                /* Scale image heights proportionally: 300/480 ≈ 62.5% of desktop */
+                .about-img-main {
+                    height: 238px !important;
+                }
+
+                .about-img-secondary {
+                    height: 150px !important;
+                }
             }
-        }
     </style>
 </head>
 
@@ -412,7 +432,7 @@
     <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-[5%] py-3.5"
         style="background:#fff;backdrop-filter:blur(12px);border-bottom:1px solid rgba(184,145,58,0.3)">
         <div class="flex items-center gap-3">
-            <img src="./logo.webp" alt="Col Brown Logo" class="w-100 h-12 object-contain flex-shrink-0" />
+            <img src="./logo.webp" alt="Col Brown Logo" class="w-auto h-12 object-contain flex-shrink-0" />
         </div>
         <div class="flex items-center">
             <span class="nav-phone text-black/70 text-[13px] mr-4">📞 +91 63951 14363</span>
@@ -423,75 +443,174 @@
     </nav>
 
     <!-- ═══ HERO ═══ -->
-    <section class="min-h-screen flex flex-col justify-center items-start px-[6%] pt-28 pb-20 relative overflow-hidden"
+    <section class="min-h-screen flex items-center justify-center px-[6%] pt-24 pb-12 relative overflow-hidden"
         id="top"
         style="background:linear-gradient(160deg,rgba(14,32,20,0.88) 0%,rgba(26,58,42,0.75) 55%,rgba(0,0,0,0.5) 100%),url('https://www.colbrownschool.com/_next/image?url=%2Fassets%2Flanding%2Flanding-boarding.webp&w=3840&q=75') center/cover no-repeat">
         <div class="absolute inset-0 pointer-events-none"
             style="background:radial-gradient(ellipse 80% 60% at 20% 60%,rgba(184,145,58,0.08) 0%,transparent 70%)">
         </div>
 
-        <div class="hero-est flex items-center gap-3 text-gold-light font-medium mb-5 anim-1"
-            style="font-size:11px;letter-spacing:4px;text-transform:uppercase">Est. 1926 &nbsp;·&nbsp; Dehradun, India
-            &nbsp;·&nbsp; ICSE Affiliated</div>
+        <div class="w-full max-w-[1300px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-8 relative z-10">
+            <!-- Left Side: Text and Stats -->
+            <div class="flex-1 w-full flex flex-col items-start">
+                <div class="hero-est flex items-center gap-3 text-gold-light font-medium mb-5 anim-1"
+                    style="font-size:11px;letter-spacing:4px;text-transform:uppercase">Est. 1926 &nbsp;·&nbsp; Dehradun, India
+                    &nbsp;·&nbsp; ICSE Affiliated</div>
 
-        <h1 class="font-playfair font-black text-white leading-none mb-6 max-w-[750px] anim-2"
-            style="font-size:clamp(38px,6vw,76px);line-height:1.08">
-            Where Boys Become<br /><em class="italic text-gold-light">Leaders for Life</em>
-        </h1>
+                <h1 class="font-playfair font-black text-white leading-none mb-6 max-w-[750px] anim-2"
+                    style="font-size:clamp(38px,6vw,76px);line-height:1.08">
+                    Where Boys Become<br /><em class="italic text-gold-light">Leaders for Life</em>
+                </h1>
 
-        <p class="text-white/80 font-light leading-relaxed max-w-[540px] mb-10 anim-3"
-            style="font-size:clamp(16px,2vw,20px)">
-            India's most storied boarding school, tucked in the Himalayas.<br />
-            <strong class="text-white font-semibold">Nearly a century</strong> of forging character, scholarship, and
-            quiet confidence in young men — one term at a time.
-        </p>
+                <p class="text-white/80 font-light leading-relaxed max-w-[540px] mb-10 anim-3"
+                    style="font-size:clamp(16px,2vw,20px)">
+                    India's most storied boarding school, tucked in the Himalayas.<br />
+                    <strong class="text-white font-semibold">Nearly a century</strong> of forging character, scholarship, and
+                    quiet confidence in young men — one term at a time.
+                </p>
 
-        <div class="flex gap-3.5 flex-wrap anim-4">
-            <a href="#enquire"
-                class="btn-primary bg-gold text-white no-underline px-8 py-4 rounded text-[15px] font-semibold inline-flex items-center gap-2 transition-all"
-                style="box-shadow:0 4px 24px rgba(184,145,58,0.4)">🎓 Apply for 2025–26 Admission</a>
-            <a href="#about"
-                class="btn-secondary text-white no-underline px-8 py-4 rounded text-[15px] font-medium inline-block transition-all"
-                style="border:1.5px solid rgba(255,255,255,0.5)">Take a Virtual Tour</a>
-        </div>
-
-        <div class="hero-stats mt-14 anim-5">
-            <div>
-                <div class="font-playfair text-gold-light font-bold leading-none" style="font-size:32px">99+</div>
-                <div class="text-white/60 uppercase mt-1" style="font-size:11px;letter-spacing:0.5px">Years of Legacy
+                <div class="hero-stats mt-4 anim-5">
+                    <div>
+                        <div class="font-playfair text-gold-light font-bold leading-none" style="font-size:32px">99+</div>
+                        <div class="text-white/60 uppercase mt-1" style="font-size:11px;letter-spacing:0.5px">Years of Legacy
+                        </div>
+                    </div>
+                    <div class="hero-stats-sep w-px h-12 self-center bg-white/20"></div>
+                    <div>
+                        <div class="font-playfair text-gold-light font-bold leading-none" style="font-size:32px">ICSE</div>
+                        <div class="text-white/60 uppercase mt-1" style="font-size:11px;letter-spacing:0.5px">Affiliated Board
+                        </div>
+                    </div>
+                    <div class="hero-stats-sep w-px h-12 self-center bg-white/20"></div>
+                    <div>
+                        <div class="font-playfair text-gold-light font-bold leading-none" style="font-size:32px">Gr. 1–12</div>
+                        <div class="text-white/60 uppercase mt-1" style="font-size:11px;letter-spacing:0.5px">Boys Boarding
+                        </div>
+                    </div>
+                    <div class="hero-stats-sep w-px h-12 self-center bg-white/20"></div>
+                    <div>
+                        <div class="font-playfair text-gold-light font-bold leading-none" style="font-size:32px">NDA · JEE ·
+                            NEET</div>
+                        <div class="text-white/60 uppercase mt-1" style="font-size:11px;letter-spacing:0.5px">On-Campus Coaching
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="hero-stats-sep w-px h-12 self-center bg-white/20"></div>
-            <div>
-                <div class="font-playfair text-gold-light font-bold leading-none" style="font-size:32px">ICSE</div>
-                <div class="text-white/60 uppercase mt-1" style="font-size:11px;letter-spacing:0.5px">Affiliated Board
-                </div>
-            </div>
-            <div class="hero-stats-sep w-px h-12 self-center bg-white/20"></div>
-            <div>
-                <div class="font-playfair text-gold-light font-bold leading-none" style="font-size:32px">Gr. 1–12</div>
-                <div class="text-white/60 uppercase mt-1" style="font-size:11px;letter-spacing:0.5px">Boys Boarding
-                </div>
-            </div>
-            <div class="hero-stats-sep w-px h-12 self-center bg-white/20"></div>
-            <div>
-                <div class="font-playfair text-gold-light font-bold leading-none" style="font-size:32px">NDA · JEE ·
-                    NEET</div>
-                <div class="text-white/60 uppercase mt-1" style="font-size:11px;letter-spacing:0.5px">On-Campus Coaching
-                </div>
-            </div>
-        </div>
 
-        <div class="relative mt-10 w-full sm:w-auto sm:mt-0 sm:absolute sm:bottom-7 sm:right-[6%] text-white text-[13px] rounded-lg px-5 py-3.5 anim-6"
-            style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);backdrop-filter:blur(8px)">
-            <strong class="text-gold-light block text-[15px] mb-0.5">⚠ Limited Seats Remaining</strong>
-            Admissions for 2025–26 are filling fast. Secure your son's place today.
+            <!-- Right Side: Booking Form -->
+            <div class="w-full max-w-[380px] shrink-0 anim-4" id="enquire">
+                <div class="bg-[#b8913a] overflow-hidden" style="box-shadow: 0 10px 40px rgba(0,0,0,0.4);">
+                    <!-- Form Header -->
+                    <div class="bg-[#f8f4ed] py-4 px-5 text-center">
+                        <h2 class="font-bold text-[#0d1f15] font-dm" style="font-size:22px;line-height:1.2;letter-spacing:-0.5px">
+                            Book your School Visit<br/>Today!
+                        </h2>
+                    </div>
+                    <!-- Form Body -->
+                    <form id="enquireForm" class="p-5 flex flex-col gap-2.5" novalidate>
+                        
+                        <div class="form-group w-full relative">
+                            <input type="text" id="parentName" name="parentName" required
+                                   class="w-full bg-[#f8f4ed] border-none px-4 py-2.5 text-[14px] text-[#0d1f15] outline-none placeholder-[#0d1f15]/70 focus:ring-2 focus:ring-[#0d1f15]/30 transition-all"
+                                   placeholder="Parent Name">
+                        </div>
+                        
+                        <div class="form-group w-full relative">
+                            <input type="email" id="email" name="email" required
+                                   class="w-full bg-[#f8f4ed] border-none px-4 py-2.5 text-[14px] text-[#0d1f15] outline-none placeholder-[#0d1f15]/70 focus:ring-2 focus:ring-[#0d1f15]/30 transition-all"
+                                   placeholder="Email">
+                        </div>
+                        
+                        <div class="form-group w-full relative">
+                            <input type="tel" id="mobile" name="mobile" required maxlength="10"
+                                   class="w-full bg-[#f8f4ed] border-none px-4 py-2.5 text-[14px] text-[#0d1f15] outline-none placeholder-[#0d1f15]/70 focus:ring-2 focus:ring-[#0d1f15]/30 transition-all"
+                                   placeholder="Mobile Number" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                        </div>
+                        
+                        <div class="form-group w-full relative">
+                            <select id="state" name="state" required
+                                    class="w-full bg-[#f8f4ed] border-none px-4 py-2.5 text-[14px] text-[#0d1f15]/90 outline-none cursor-pointer appearance-none focus:ring-2 focus:ring-[#0d1f15]/30 transition-all">
+                                <option value="" disabled selected>Your State</option>
+                                <option value="uttarakhand">Uttarakhand</option>
+                                <option value="delhi">Delhi / NCR</option>
+                                <option value="up">Uttar Pradesh</option>
+                                <option value="punjab">Punjab</option>
+                                <option value="haryana">Haryana</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-[#0d1f15] font-bold text-[10px]">▼</span>
+                        </div>
+                        
+                        <div class="form-group w-full relative">
+                            <select id="city" name="city" required
+                                    class="w-full bg-[#f8f4ed] border-none px-4 py-2.5 text-[14px] text-[#0d1f15]/90 outline-none cursor-pointer appearance-none focus:ring-2 focus:ring-[#0d1f15]/30 transition-all">
+                                <option value="" disabled selected>Your City</option>
+                                <option value="dehradun">Dehradun</option>
+                                <option value="delhi">Delhi</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-[#0d1f15] font-bold text-[10px]">▼</span>
+                        </div>
+
+                        <div class="form-group w-full relative">
+                            <select id="classApplying" name="classApplying" required
+                                    class="w-full bg-[#f8f4ed] border-none px-4 py-2.5 text-[14px] text-[#0d1f15]/90 outline-none cursor-pointer appearance-none focus:ring-2 focus:ring-[#0d1f15]/30 transition-all">
+                                <option value="" disabled selected>Class Applying for</option>
+                                <option value="1">Class I</option>
+                                <option value="2">Class II</option>
+                                <option value="3">Class III</option>
+                                <option value="4">Class IV</option>
+                                <option value="5">Class V</option>
+                                <option value="6">Class VI</option>
+                                <option value="7">Class VII</option>
+                                <option value="8">Class VIII</option>
+                                <option value="9">Class IX</option>
+                                <option value="11">Class XI</option>
+                            </select>
+                            <span class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-[#0d1f15] font-bold text-[10px]">▼</span>
+                        </div>
+                        
+                        <div class="form-group w-full relative">
+                            <textarea id="query" name="query" rows="1"
+                                      class="w-full bg-[#f8f4ed] border-none px-4 py-2.5 text-[14px] text-[#0d1f15] outline-none placeholder-[#0d1f15]/70 resize-none focus:ring-2 focus:ring-[#0d1f15]/30 transition-all"
+                                      placeholder="Query"></textarea>
+                            <div class="absolute bottom-2 right-2 pointer-events-none opacity-40">
+                                <svg width="6" height="6" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 1L1 7M7 4L4 7" stroke="#0d1f15" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <div id="formSuccess" class="hidden text-center text-[#0d1f15] bg-[#f8f4ed] rounded py-2 text-[13px] font-medium mt-1">
+                            Thank you! We will contact you soon.
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Submit Button with upward triangle -->
+                <div class="relative mt-0 flex justify-center pb-5">
+                    <!-- Triangle pointing up -->
+                    <div class="absolute -top-[10px] left-1/2 -translate-x-1/2 w-0 h-0 border-l-[10px] border-r-[10px] border-b-[10px] border-l-transparent border-r-transparent border-b-[#f8f4ed]"></div>
+                    
+                    <button type="submit" form="enquireForm" id="submitBtn"
+                            class="bg-[#f8f4ed] text-[#2c3d33] font-bold py-2.5 px-8 rounded-md w-[92%] text-[18px] transition-all flex items-center justify-center relative hover:bg-white"
+                            style="box-shadow: 0 4px 14px rgba(0,0,0,0.25);">
+                        <span id="btnText">Submit</span>
+                        <span id="btnLoader" class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity">
+                            <svg class="animate-spin h-5 w-5 text-[#2c3d33]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- ═══ TRUST BAR ═══ -->
     <div
-        class="bg-forest py-5 px-[6%] flex items-center justify-start sm:justify-center gap-8 flex-nowrap overflow-x-auto whitespace-nowrap">
+        class="hide-scrollbar bg-forest py-5 px-[6%] flex items-center justify-start sm:justify-center gap-4 xl:gap-8 flex-nowrap overflow-x-auto whitespace-nowrap">
         <div class="flex items-center gap-2.5 text-white/75 text-[13px]"><span class="text-gold text-lg">🏅</span> CISCE
             Affiliated (ICSE/ISC)</div>
         <span class="text-white/20 text-lg">|</span>
@@ -1149,26 +1268,11 @@
         </div>
     </section>
 
-    <!-- ═══ FINAL CTA ═══ -->
-    <!-- <section class="final-cta-bg bg-cream text-center py-24 px-[6%] relative overflow-hidden">
-  <h2 class="font-playfair font-bold text-forest mb-5 relative" style="font-size:clamp(32px,5vw,56px)">The Right School Changes Everything.<br/>This Is That School.</h2>
-  <p class="text-text-muted max-w-[520px] mx-auto mb-10 leading-relaxed relative" style="font-size:17px">Applications for the 2025–26 academic session are open. Seats at CBS have always filled before the deadline — because parents who visit don't leave without enrolling.</p>
-  <div class="flex gap-4 justify-center flex-wrap relative">
-    <a href="#enquire" class="btn-primary bg-gold text-white no-underline px-8 py-4 rounded text-[15px] font-semibold inline-flex items-center gap-2 transition-all"
-       style="box-shadow:0 4px 24px rgba(184,145,58,0.4)">🎓 Apply Now — Seats Filling Fast</a>
-    <a href="tel:+916395114363" class="btn-dark bg-forest text-white no-underline px-8 py-4 rounded text-[15px] font-semibold inline-flex items-center gap-2 transition-all">📞 Call Admissions: +91 63951 14363</a>
-  </div>
-  <div class="mt-9 relative">
-    <span class="inline-flex items-center gap-2.5 text-forest font-medium px-5 py-2.5 rounded-full" style="font-size:13px;background:rgba(184,145,58,0.12);border:1px solid rgba(184,145,58,0.25)">
-      <span class="urgency-dot w-2 h-2 rounded-full bg-[#e05c35]"></span>
-      Admissions Closing Soon for 2025–26 · Secure Your Son's Seat Today
-    </span>
-  </div>
-</section> -->
+    <!-- ═══ BOTTOM ENQUIRE FORM MOVED TO HERO ═══ -->
 
     <!-- ═══ FOOTER ═══ -->
     <footer class="px-[6%] pb-5"
-        style="background:#0d1f15;color:rgba(255,255,255,0.6);display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px">
+        style="background:#0d1f15 ; color:rgba(255,255,255,0.6);display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px">
         <div class="col-span-3 flex justify-between items-center flex-wrap gap-2 pt-5" style="font-size:12px">
             <span>© 2025 Col. Brown Cambridge School, Dehradun. All Rights Reserved.</span>
             <span style="color:rgba(255,255,255,0.3)">Best Boarding School in Dehradun for Boys · ICSE Residential
@@ -1178,21 +1282,107 @@
 
     <!-- ═══ MOBILE STICKY CTA ═══ -->
     <div class="mobile-sticky fixed bottom-0 left-0 right-0 z-50 bg-forest px-5 py-3.5 items-center justify-between gap-3 flex sm:hidden"
-        style="border-top:2px solid #b8913a;box-shadow:0 -4px 24px rgba(0,0,0,0.2)">
+        style="border-top:2px solid #b8913a ; box-shadow:0 -4px 24px rgba(0,0,0,0.2)">
         <div class="text-white" style="font-size:13px">
             <strong class="block text-gold-light" style="font-size:15px">Admissions Open 2025–26</strong>
             Seats filling fast — enquire today
         </div>
-        <a href="#enquire"
+        <a href="https://wa.me/+916395114363"
             class="nav-cta bg-gold text-white no-underline px-5 py-2.5 rounded text-[13px] font-semibold uppercase transition-all"
             style="letter-spacing:0.5px">Apply Now</a>
     </div>
 
     <script>
+        // FAQ Toggle
         function toggleFaq(el) {
             const card = el.closest('.faq');
             card.classList.toggle('open');
         }
+
+        // Form Validation Logic
+        document.addEventListener("DOMContentLoaded", () => {
+            const form = document.getElementById("enquireForm");
+            if (!form) return;
+
+            const inputs = form.querySelectorAll("input[required], select[required]");
+            const submitBtn = document.getElementById("submitBtn");
+            const btnText = document.getElementById("btnText");
+            const btnLoader = document.getElementById("btnLoader");
+            const formSuccess = document.getElementById("formSuccess");
+
+            // Utility to set error state
+            const setError = (element, isError) => {
+                const group = element.closest('.form-group');
+                if (isError) {
+                    group.classList.add('has-error');
+                } else {
+                    group.classList.remove('has-error');
+                }
+            };
+
+            // Validation Rules
+            const validateField = (input) => {
+                let isError = false;
+                const value = input.value.trim();
+
+                if (value === "") {
+                    isError = true;
+                } else if (input.type === "email") {
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    isError = !emailRegex.test(value);
+                } else if (input.type === "tel") {
+                    const phoneRegex = /^[0-9]{10}$/;
+                    isError = !phoneRegex.test(value);
+                }
+
+                setError(input, isError);
+                return !isError;
+            };
+
+            // Real-time validation
+            inputs.forEach(input => {
+                input.addEventListener('blur', () => validateField(input));
+                input.addEventListener('input', () => {
+                    const group = input.closest('.form-group');
+                    if (group.classList.contains('has-error')) {
+                        validateField(input);
+                    }
+                });
+            });
+
+            // Form Submit
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                let isValid = true;
+
+                inputs.forEach(input => {
+                    if (!validateField(input)) {
+                        isValid = false;
+                    }
+                });
+
+                if (isValid) {
+                    // Simulate API Call Submission
+                    btnText.style.opacity = "0";
+                    btnLoader.style.opacity = "1";
+                    submitBtn.disabled = true;
+                    submitBtn.classList.add('opacity-90', 'cursor-not-allowed');
+
+                    setTimeout(() => {
+                        btnLoader.style.opacity = "0";
+                        btnText.style.opacity = "1";
+                        formSuccess.classList.remove("hidden");
+                        form.reset();
+                        
+                        setTimeout(() => {
+                            submitBtn.disabled = false;
+                            submitBtn.classList.remove('opacity-90', 'cursor-not-allowed');
+                            formSuccess.classList.add("hidden");
+                        }, 5000);
+                    }, 1500);
+                }
+            });
+        });
     </script>
 </body>
 
