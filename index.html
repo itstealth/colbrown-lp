@@ -264,6 +264,35 @@
             }
         }
 
+        /* Hero stats – 2×2 grid on mobile */
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        @media(max-width:639px) {
+            .hero-stats {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 0.25rem 0.5rem;
+            }
+
+            .hero-stats-sep {
+                display: none;
+            }
+
+            /* Scale down stat numbers & labels to fit one row */
+            .hero-stats > div > div:first-child {
+                font-size: 18px !important;
+                line-height: 1.1;
+            }
+
+            .hero-stats > div > div:last-child {
+                font-size: 8px !important;
+            }
+        }
+
         /* Form submit hover */
         .form-submit:hover {
             background: #d4a84b;
@@ -323,6 +352,13 @@
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         }
 
+        /* About stats grid */
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.25rem;
+        }
+
         @media (max-width: 640px) {
             .benefits-grid,
             .why-grid {
@@ -339,6 +375,18 @@
 
             .faq-grid {
                 grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            }
+
+            .about-stats {
+                gap: 0.5rem;
+            }
+
+            .about-stats > div > div:first-child {
+                font-size: 20px !important;
+            }
+
+            .about-stats > div > div:last-child {
+                font-size: 10px !important;
             }
 
             .about-img-wrap {
@@ -411,25 +459,25 @@
                 style="border:1.5px solid rgba(255,255,255,0.5)">Take a Virtual Tour</a>
         </div>
 
-        <div class="flex gap-8 flex-wrap mt-14 anim-5">
+        <div class="hero-stats mt-14 anim-5">
             <div>
                 <div class="font-playfair text-gold-light font-bold leading-none" style="font-size:32px">99+</div>
                 <div class="text-white/60 uppercase mt-1" style="font-size:11px;letter-spacing:0.5px">Years of Legacy
                 </div>
             </div>
-            <div class="w-px h-12 self-center bg-white/20"></div>
+            <div class="hero-stats-sep w-px h-12 self-center bg-white/20"></div>
             <div>
                 <div class="font-playfair text-gold-light font-bold leading-none" style="font-size:32px">ICSE</div>
                 <div class="text-white/60 uppercase mt-1" style="font-size:11px;letter-spacing:0.5px">Affiliated Board
                 </div>
             </div>
-            <div class="w-px h-12 self-center bg-white/20"></div>
+            <div class="hero-stats-sep w-px h-12 self-center bg-white/20"></div>
             <div>
                 <div class="font-playfair text-gold-light font-bold leading-none" style="font-size:32px">Gr. 1–12</div>
                 <div class="text-white/60 uppercase mt-1" style="font-size:11px;letter-spacing:0.5px">Boys Boarding
                 </div>
             </div>
-            <div class="w-px h-12 self-center bg-white/20"></div>
+            <div class="hero-stats-sep w-px h-12 self-center bg-white/20"></div>
             <div>
                 <div class="font-playfair text-gold-light font-bold leading-none" style="font-size:32px">NDA · JEE ·
                     NEET</div>
@@ -575,7 +623,7 @@
                 <p class="leading-relaxed text-[#444] mb-5" style="font-size:16px">We believe a truly educated young man
                     is more than his marks. He is honest, resilient, curious and compassionate. Every policy, programme
                     and tradition at CBS is designed with that end in mind.</p>
-                <div class="grid grid-cols-3 gap-5 my-9 py-7"
+                <div class="about-stats my-9 py-7"
                     style="border-top:1px solid rgba(184,145,58,0.25);border-bottom:1px solid rgba(184,145,58,0.25)">
                     <div class="text-center">
                         <div class="font-playfair font-bold text-forest" style="font-size:36px">1926</div>
