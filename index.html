@@ -616,7 +616,7 @@
         <span class="text-white/20 text-lg">|</span>
         <!-- <div class="flex items-center gap-2.5 text-white/75 text-[13px]"><span class="text-gold text-lg">🏔</span>
             25-Acre Campus, Dehradun</div> -->
-        <span class="text-white/20 text-lg">|</span>
+        <!-- <span class="text-white/20 text-lg">|</span> -->
         <div class="flex items-center gap-2.5 text-white/75 text-[13px]"><span class="text-gold text-lg">🎖</span> NDA
             Coaching On-Campus</div>
         <span class="text-white/20 text-lg">|</span>
@@ -712,7 +712,7 @@
     <section class="py-10 sm:py-12 px-[6%]" id="about">
         <div class="about-grid grid gap-12 items-center">
             <!-- Image Stack -->
-            <div class="about-img-wrap relative h-[380px]">
+            <div class="about-img-wrap relative h-[380px] sm:h-[480px]">
                 <img class="about-img-main absolute top-0 left-0 object-cover rounded" style="width:75%;height:380px"
                     src="https://www.colbrownschool.com/_next/image?url=%2Fassets%2Flanding%2Fnineteen-thirties-2.webp&w=1200&q=75"
                     alt="Col Brown Cambridge School campus" />
@@ -1281,7 +1281,7 @@
     </footer>
 
     <!-- ═══ MOBILE STICKY CTA ═══ -->
-    <div class="mobile-sticky fixed bottom-0 left-0 right-0 z-50 bg-forest px-5 py-3.5 items-center justify-between gap-3 flex sm:hidden"
+    <div id="mobileStickyCta" class="mobile-sticky fixed bottom-0 left-0 right-0 z-50 bg-forest px-5 py-3.5 items-center justify-between gap-3 flex sm:hidden translate-y-full opacity-0 transition-all duration-300"
         style="border-top:2px solid #b8913a ; box-shadow:0 -4px 24px rgba(0,0,0,0.2)">
         <div class="text-white" style="font-size:13px">
             <strong class="block text-gold-light" style="font-size:15px">Admissions Open 2025–26</strong>
@@ -1362,26 +1362,65 @@
                 });
 
                 if (isValid) {
-                    // Simulate API Call Submission
+                    // Start API Call Submission
                     btnText.style.opacity = "0";
                     btnLoader.style.opacity = "1";
                     submitBtn.disabled = true;
                     submitBtn.classList.add('opacity-90', 'cursor-not-allowed');
 
-                    setTimeout(() => {
-                        btnLoader.style.opacity = "0";
-                        btnText.style.opacity = "1";
-                        formSuccess.classList.remove("hidden");
-                        form.reset();
-                        
-                        setTimeout(() => {
-                            submitBtn.disabled = false;
-                            submitBtn.classList.remove('opacity-90', 'cursor-not-allowed');
-                            formSuccess.classList.add("hidden");
-                        }, 5000);
-                    }, 1500);
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbzZCXy9ayn-ofcukdFMU6gmenItrKjNheHY8aTzDkWEzTDJTjeSymmSUh_xWZ4wjEUCbA/exec';
+                    
+                    const formData = new FormData(form);
+                    
+                    const urlParams = new URLSearchParams(window.location.search);
+                    formData.append('utm_source', urlParams.get('utm_source') || '');
+                    formData.append('utm_medium', urlParams.get('utm_medium') || '');
+                    formData.append('utm_campaign', urlParams.get('utm_campaign') || '');
+
+                    fetch(scriptURL, { method: 'POST', body: formData, mode: 'no-cors' })
+                        .then(() => {
+                            btnLoader.style.opacity = "0";
+                            btnText.style.opacity = "1";
+                            formSuccess.classList.remove("hidden");
+                            formSuccess.textContent = "Thank you! We will contact you soon.";
+                            form.reset();
+                            
+                            setTimeout(() => {
+                                submitBtn.disabled = false;
+                                submitBtn.classList.remove('opacity-90', 'cursor-not-allowed');
+                                formSuccess.classList.add("hidden");
+                            }, 5000);
+                        })
+                        .catch(error => {
+                            console.error('Error submitting form!', error.message);
+                            btnLoader.style.opacity = "0";
+                            btnText.style.opacity = "1";
+                            formSuccess.classList.remove("hidden");
+                            formSuccess.textContent = "Something went wrong. Please try again.";
+                            
+                            setTimeout(() => {
+                                submitBtn.disabled = false;
+                                submitBtn.classList.remove('opacity-90', 'cursor-not-allowed');
+                                formSuccess.classList.add("hidden");
+                            }, 5000);
+                        });
                 }
             });
+
+            // Mobile Sticky CTA Logic
+            const stickyCta = document.getElementById("mobileStickyCta");
+            if (stickyCta) {
+                window.addEventListener("scroll", () => {
+                    // Show after scrolling past 80% of viewport height (almost 1 screen)
+                    if (window.scrollY > window.innerHeight * 0.8) {
+                        stickyCta.classList.remove("translate-y-full", "opacity-0");
+                        stickyCta.classList.add("translate-y-0", "opacity-100");
+                    } else {
+                        stickyCta.classList.add("translate-y-full", "opacity-0");
+                        stickyCta.classList.remove("translate-y-0", "opacity-100");
+                    }
+                });
+            }
         });
     </script>
 </body>
