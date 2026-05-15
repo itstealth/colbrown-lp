@@ -599,38 +599,38 @@
             </div>
 
             <!-- Right Side: Booking Form -->
-            <div class="w-full max-w-[380px] shrink-0 anim-4" id="enquire">
+            <div class="w-full max-w-[320px] shrink-0 anim-4" id="enquire">
                 <div class="bg-[#b8913a] overflow-hidden" style="box-shadow: 0 10px 40px rgba(0,0,0,0.4);">
                     <!-- Form Header -->
-                    <div class="bg-[#f8f4ed] py-4 px-5 text-center">
-                        <h2 class="font-bold text-[#0d1f15] font-dm" style="font-size:22px;line-height:1.2;letter-spacing:-0.5px">
+                    <div class="bg-[#f8f4ed] py-3 px-4 text-center">
+                        <h2 class="font-bold text-[#0d1f15] font-dm" style="font-size:18px;line-height:1.2;letter-spacing:-0.5px">
                             Book your School Visit<br/>Today!
                         </h2>
                     </div>
                     <!-- Form Body -->
-                    <form id="enquireForm" class="p-5 flex flex-col gap-2.5" novalidate>
+                    <form id="enquireForm" class="p-4 flex flex-col gap-2" novalidate>
                         
                         <div class="form-group w-full relative">
                             <input type="text" id="parentName" name="parentName" required
-                                   class="w-full bg-[#f8f4ed] border-none px-4 py-2.5 text-[14px] text-[#0d1f15] outline-none placeholder-[#0d1f15]/70 focus:ring-2 focus:ring-[#0d1f15]/30 transition-all"
+                                   class="w-full bg-[#f8f4ed] border-none px-4 py-2 text-[14px] text-[#0d1f15] outline-none placeholder-[#0d1f15]/70 focus:ring-2 focus:ring-[#0d1f15]/30 transition-all"
                                    placeholder="Parent Name">
                         </div>
                         
                         <div class="form-group w-full relative">
                             <input type="email" id="email" name="email" required
-                                   class="w-full bg-[#f8f4ed] border-none px-4 py-2.5 text-[14px] text-[#0d1f15] outline-none placeholder-[#0d1f15]/70 focus:ring-2 focus:ring-[#0d1f15]/30 transition-all"
+                                   class="w-full bg-[#f8f4ed] border-none px-4 py-2 text-[14px] text-[#0d1f15] outline-none placeholder-[#0d1f15]/70 focus:ring-2 focus:ring-[#0d1f15]/30 transition-all"
                                    placeholder="Email">
                         </div>
                         
                         <div class="form-group w-full relative">
                             <input type="tel" id="mobile" name="mobile" required maxlength="10"
-                                   class="w-full bg-[#f8f4ed] border-none px-4 py-2.5 text-[14px] text-[#0d1f15] outline-none placeholder-[#0d1f15]/70 focus:ring-2 focus:ring-[#0d1f15]/30 transition-all"
+                                   class="w-full bg-[#f8f4ed] border-none px-4 py-2 text-[14px] text-[#0d1f15] outline-none placeholder-[#0d1f15]/70 focus:ring-2 focus:ring-[#0d1f15]/30 transition-all"
                                    placeholder="Mobile Number" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
                         </div>
                         
                         <div class="form-group w-full relative">
                             <select id="state" name="state" required
-                                    class="w-full bg-[#f8f4ed] border-none px-4 py-2.5 text-[14px] text-[#0d1f15]/90 outline-none cursor-pointer appearance-none focus:ring-2 focus:ring-[#0d1f15]/30 transition-all">
+                                    class="w-full bg-[#f8f4ed] border-none px-4 py-2 text-[14px] text-[#0d1f15]/90 outline-none cursor-pointer appearance-none focus:ring-2 focus:ring-[#0d1f15]/30 transition-all">
                                 <option value="" disabled selected>Your State</option>
                                 <option value="uttarakhand">Uttarakhand</option>
                                 <option value="delhi">Delhi / NCR</option>
@@ -644,7 +644,7 @@
                         
                         <div class="form-group w-full relative">
                             <select id="city" name="city" required
-                                    class="w-full bg-[#f8f4ed] border-none px-4 py-2.5 text-[14px] text-[#0d1f15]/90 outline-none cursor-pointer appearance-none focus:ring-2 focus:ring-[#0d1f15]/30 transition-all">
+                                    class="w-full bg-[#f8f4ed] border-none px-4 py-2 text-[14px] text-[#0d1f15]/90 outline-none cursor-pointer appearance-none focus:ring-2 focus:ring-[#0d1f15]/30 transition-all">
                                 <option value="" disabled selected>Your City</option>
                                 <option value="dehradun">Dehradun</option>
                                 <option value="delhi">Delhi</option>
@@ -655,7 +655,7 @@
 
                         <div class="form-group w-full relative">
                             <select id="classApplying" name="classApplying" required
-                                    class="w-full bg-[#f8f4ed] border-none px-4 py-2.5 text-[14px] text-[#0d1f15]/90 outline-none cursor-pointer appearance-none focus:ring-2 focus:ring-[#0d1f15]/30 transition-all">
+                                    class="w-full bg-[#f8f4ed] border-none px-4 py-2 text-[14px] text-[#0d1f15]/90 outline-none cursor-pointer appearance-none focus:ring-2 focus:ring-[#0d1f15]/30 transition-all">
                                 <option value="" disabled selected>Class Applying for</option>
                                 <option value="4">Class IV</option>
                                 <option value="5">Class V</option>
@@ -691,7 +691,7 @@
                     <div class="absolute -top-[10px] left-1/2 -translate-x-1/2 w-0 h-0 border-l-[10px] border-r-[10px] border-b-[10px] border-l-transparent border-r-transparent border-b-[#f8f4ed]"></div>
                     
                     <button type="submit" form="enquireForm" id="submitBtn"
-                            class="bg-[#f8f4ed] text-[#2c3d33] font-bold py-2.5 px-8 rounded-md w-[92%] text-[18px] transition-all flex items-center justify-center relative hover:bg-white"
+                            class="bg-[#f8f4ed] text-[#2c3d33] font-bold py-2 px-6 rounded-md w-[92%] text-[16px] transition-all flex items-center justify-center relative hover:bg-white"
                             style="box-shadow: 0 4px 14px rgba(0,0,0,0.25);">
                         <span id="btnText">Submit</span>
                         <span id="btnLoader" class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity">
@@ -706,24 +706,7 @@
         </div>
     </section>
 
-    <!-- ═══ TRUST BAR ═══ -->
-    <div
-        class="hide-scrollbar bg-forest py-5 px-[6%] flex items-center justify-start sm:justify-center gap-4 xl:gap-8 flex-nowrap overflow-x-auto whitespace-nowrap">
-        <div class="flex items-center gap-2.5 text-white/75 text-[13px]"><span class="text-gold text-lg">🏅</span> CISCE
-            Affiliated (ICSE/ISC)</div>
-        <span class="text-white/20 text-lg">|</span>
-        <!-- <div class="flex items-center gap-2.5 text-white/75 text-[13px]"><span class="text-gold text-lg">🏔</span>
-            25-Acre Campus, Dehradun</div> -->
-        <!-- <span class="text-white/20 text-lg">|</span> -->
-        <div class="flex items-center gap-2.5 text-white/75 text-[13px]"><span class="text-gold text-lg">🎖</span> NDA
-            Coaching On-Campus</div>
-        <span class="text-white/20 text-lg">|</span>
-        <div class="flex items-center gap-2.5 text-white/75 text-[13px]"><span class="text-gold text-lg">📞</span>
-            Helpline: +91 63951 14363</div>
-        <span class="text-white/20 text-lg">|</span>
-        <div class="flex items-center gap-2.5 text-white/75 text-[13px]"><span class="text-gold text-lg">🔒</span> 24×7
-            Supervised Boarding</div>
-    </div>
+
 
     <!-- ═══ NOTABLE ALUMNI ═══ -->
     <section class="py-10 sm:py-16 px-[6%]" id="alumni" style="background:linear-gradient(180deg,#0d1f15 0%,#1a3a2a 100%)">
@@ -1060,7 +1043,7 @@
                             <td class="px-5 py-3.5 text-[14px] text-white/75"
                                 style="border-top:1px solid rgba(255,255,255,0.06)">Board</td>
                             <td class="px-5 py-3.5 text-[14px] text-gold-light font-semibold"
-                                style="border-top:1px solid rgba(255,255,255,0.06)">ICSE / ISC (CISCE)</td>
+                                style="border-top:1px solid rgba(255,255,255,0.06)">ICSE / ISC</td>
                             <td class="px-5 py-3.5 text-[14px] text-white/75"
                                 style="border-top:1px solid rgba(255,255,255,0.06)">Varies</td>
                         </tr>
@@ -1106,8 +1089,7 @@
                     </div>
                     <ul class="flex flex-col gap-2.5">
                         <li class="flex items-baseline gap-2.5 text-[#555]" style="font-size:15px"><span
-                                class="text-gold text-xs flex-shrink-0">—</span>ICSE (Class X) & ISC (Class XII) — CISCE
-                            Board</li>
+                                class="text-gold text-xs flex-shrink-0">—</span>ICSE (Class X) & ISC (Class XII)</li>
                         <li class="flex items-baseline gap-2.5 text-[#555]" style="font-size:15px"><span
                                 class="text-gold text-xs flex-shrink-0">—</span>Science, Commerce & Humanities streams
                         </li>
@@ -1425,7 +1407,7 @@
                         class="faq-arrow text-gold text-xl">+</span>
                 </div>
                 <div class="faq-answer px-6 pb-5 text-text-muted leading-relaxed" style="font-size:14px">CBS is
-                    affiliated to the Council for the Indian School Certificate Examinations (CISCE). Students appear
+                    affiliated to the ICSE board. Students appear
                     for ICSE (Class X) and ISC (Class XII) examinations — widely recognised as one of India's most
                     rigorous and respected school-level boards, accepted by universities globally.</div>
             </div>
