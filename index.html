@@ -293,13 +293,25 @@
 
             @media(max-width:639px) {
                 .hero-stats {
-                    display: grid;
-                    grid-template-columns: repeat(4, 1fr);
-                    gap: 0.25rem 0.5rem;
+                    display: flex !important;
+                    flex-wrap: wrap;
+                    gap: 1.25rem 0.5rem;
+                    justify-content: space-between;
+                }
+
+                .hero-stats > div:not(.hero-stats-sep) {
+                    width: calc(32% - 0.25rem);
+                }
+
+                .hero-stats > div:nth-child(7) {
+                    width: 100% !important;
+                    border-top: 1px solid rgba(255,255,255,0.1);
+                    padding-top: 12px;
+                    margin-top: 5px;
                 }
 
                 .hero-stats-sep {
-                    display: none;
+                    display: none !important;
                 }
 
                 /* Scale down stat numbers & labels to fit one row */
@@ -310,6 +322,16 @@
 
                 .hero-stats>div>div:last-child {
                     font-size: 8px !important;
+                }
+
+                .hero-est {
+                    letter-spacing: 1px !important;
+                    font-size: 10px !important;
+                    gap: 1.5rem !important;
+                }
+
+                .hero-est::before {
+                    display: none !important;
                 }
             }
 
@@ -544,7 +566,7 @@
     </nav>
 
     <!-- ═══ HERO ═══ -->
-    <section class="min-h-screen flex items-center justify-center px-[6%] pt-24 pb-12 relative overflow-hidden"
+    <section class="min-h-screen flex items-center justify-center px-[6%] pt-40 sm:pt-24 pb-12 relative overflow-hidden"
         id="top"
         style="background:linear-gradient(160deg,rgba(14,32,20,0.88) 0%,rgba(26,58,42,0.75) 55%,rgba(0,0,0,0.5) 100%),url('https://www.colbrownschool.com/_next/image?url=%2Fassets%2Flanding%2Flanding-boarding.webp&w=3840&q=75') center/cover no-repeat">
         <div class="absolute inset-0 pointer-events-none"
@@ -565,7 +587,7 @@
 
                 <p class="text-white/80 font-light leading-relaxed max-w-[540px] mb-10 anim-3"
                     style="font-size:clamp(16px,2vw,20px)">
-                    India's most storied boarding school, tucked in the Himalayas.<br />
+                    India's most storied <strong class="text-white font-semibold">boys boarding school</strong>, tucked in the Himalayas.<br />
                     <strong class="text-white font-semibold">Nearly a century</strong> of forging character, scholarship, and
                     quiet confidence in young men — one term at a time.
                 </p>
@@ -604,7 +626,7 @@
                     <!-- Form Header -->
                     <div class="bg-[#f8f4ed] py-3 px-4 text-center">
                         <h2 class="font-bold text-[#0d1f15] font-dm" style="font-size:18px;line-height:1.2;letter-spacing:-0.5px">
-                            Book your School Visit<br/>Today!
+                            Admissions Open<br/>2026-27
                         </h2>
                     </div>
                     <!-- Form Body -->
